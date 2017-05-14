@@ -1,15 +1,20 @@
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\Plan.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\Purpose.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\Topic.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\brainstorming\Listing.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\FreeWrite.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\brainstorming\web\IdeaLeaf.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\brainstorming\web\IdeaComposite.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\brainstorming\web\iterator\CompositeIterator.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\Draft.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\Audiance.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\brainstorming\web\IdeaComponent.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\Diary.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\Plot.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\Journal.java
-C:\Users\Nomagon\Google Drive\Dropbox\workspace2\GhostWriter\Ghost-Core\src\main\java\com\ghost\core\brainstorming\web\iterator\IdeaIterator.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/components/Chapter.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/utils/Swapper.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/brainstorming/web/IdeaLeaf.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/category/catagoryImpl/NovelImpl.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/category/Draft.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/brainstorming/web/iterator/IdeaIterator.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/miscellaneous/Topic.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/category/Journal.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/brainstorming/web/IdeaComponent.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/category/Diary.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/brainstorming/web/IdeaComposite.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/brainstorming/Listing.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/components/Entry.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/category/FreeWrite.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/miscellaneous/Purpose.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/category/Novel.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/miscellaneous/Plot.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/category/Plan.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/writing/miscellaneous/Audiance.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Core/src/main/java/com/ghost/core/brainstorming/web/iterator/CompositeIterator.java
