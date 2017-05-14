@@ -1,4 +1,4 @@
-com\ghost\test\brainstorming\web\IdeaIteratorTest.class
-com\ghost\test\brainstorming\web\BrainstormingTestSuite.class
-com\ghost\test\brainstorming\web\IdeaCompositeTest.class
-com\ghost\test\brainstorming\web\CompositeIteratorTest.class
+com/ghost/test/brainstorming/web/IdeaIteratorTest.class
+com/ghost/test/brainstorming/web/IdeaCompositeTest.class
+com/ghost/test/brainstorming/web/BrainstormingTestSuite.class
+com/ghost/test/brainstorming/web/CompositeIteratorTest.class
