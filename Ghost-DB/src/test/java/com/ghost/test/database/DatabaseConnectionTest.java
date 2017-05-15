@@ -1,5 +1,7 @@
 package com.ghost.test.database;
+import java.io.FileReader;
 import java.sql.Connection;
+import java.util.Properties;
 
 import org.apache.commons.dbcp.BasicDataSource;
 
@@ -12,14 +14,15 @@ public class DatabaseConnectionTest {
 		 * update
 		 */
 		try {
-			String username = "toyan";
-			String password = "turpleP420";
-			String url = "jdbc:oracle:thin:@//localhost:1521/xe";
-			String port = "1521";
-			String DBName = "toyan";
-
-			String oracleDriver = "oracle.jdbc.driver.OracleDriver";
-
+			
+			Properties props = new Properties();
+			props.load(new FileReader("../Ghost-DB/src/test/resources/database.properties"));
+			
+			
+			String username = props.getProperty("username");
+			String password = props.getProperty("password");
+			String url = props.getProperty("url");
+			String oracleDriver = props.getProperty("oracleDriver");
 			BasicDataSource ds = new BasicDataSource();
 			
 			ds.setUsername(username);
