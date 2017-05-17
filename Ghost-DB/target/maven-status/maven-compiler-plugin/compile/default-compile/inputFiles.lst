@@ -1,0 +1,8 @@
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-DB/src/main/java/ghost/domain/plan/PlanDO.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-DB/src/main/java/ghost/domain/hibernate/HibernateUtil.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-DB/src/main/java/ghost/domain/edit/EditDO.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-DB/src/main/java/ghost/domain/shape/ShapeDO.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-DB/src/main/java/ghost/domain/draft/DraftDO.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-DB/src/main/java/ghost/domain/revise/ReviseDO.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-DB/src/main/java/ghost/domain/proofread/ProofReadDO.java
+/home/toyan/development/workspace/ws2/GhostWriter/Ghost-DB/src/main/java/Driver.java

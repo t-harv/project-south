@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.ghost.test.brainstorming.web.IdeaCompositeTest" time="0.142" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.ghost.test.brainstorming.web.IdeaCompositeTest" time="0.112" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/home/toyan/development/java/jdk1.8.0_121/jre/lib/amd64"/>
@@ -19,7 +19,7 @@
     <property name="basedir" value="/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Test"/>
     <property name="java.endorsed.dirs" value="/home/toyan/development/java/jdk1.8.0_121/jre/lib/endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Test/target/surefire/surefirebooter4816283830604927338.jar"/>
+    <property name="surefire.real.class.path" value="/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Test/target/surefire/surefirebooter8809329695013065662.jar"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
@@ -42,7 +42,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/home/toyan/development/java/jdk1.8.0_121/jre"/>
-    <property name="sun.java.command" value="/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Test/target/surefire/surefirebooter4816283830604927338.jar /home/toyan/development/workspace/ws2/GhostWriter/Ghost-Test/target/surefire/surefire9174236807796491960tmp /home/toyan/development/workspace/ws2/GhostWriter/Ghost-Test/target/surefire/surefire7939602726599125160tmp"/>
+    <property name="sun.java.command" value="/home/toyan/development/workspace/ws2/GhostWriter/Ghost-Test/target/surefire/surefirebooter8809329695013065662.jar /home/toyan/development/workspace/ws2/GhostWriter/Ghost-Test/target/surefire/surefire611690515831630534tmp /home/toyan/development/workspace/ws2/GhostWriter/Ghost-Test/target/surefire/surefire2507099065375769164tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -60,8 +60,8 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="com.ghost.test.brainstorming.web.IdeaCompositeTest" name="scenario1" time="0.002"/>
-  <testcase classname="com.ghost.test.brainstorming.web.IdeaCompositeTest" name="scenario2" time="0.013"/>
+  <testcase classname="com.ghost.test.brainstorming.web.IdeaCompositeTest" name="scenario2" time="0.005"/>
   <testcase classname="com.ghost.test.brainstorming.web.IdeaCompositeTest" name="scenario3" time="0"/>
-  <testcase classname="com.ghost.test.brainstorming.web.IdeaCompositeTest" name="scenario4" time="0.001"/>
+  <testcase classname="com.ghost.test.brainstorming.web.IdeaCompositeTest" name="scenario4" time="0"/>
   <testcase classname="com.ghost.test.brainstorming.web.IdeaCompositeTest" name="scenario5" time="0"/>
 </testsuite>

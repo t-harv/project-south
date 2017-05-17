@@ -1,0 +1,8 @@
+ghost/domain/revise/ReviseDO.class
+ghost/domain/edit/EditDO.class
+Driver.class
+ghost/domain/plan/PlanDO.class
+ghost/domain/shape/ShapeDO.class
+ghost/domain/proofread/ProofReadDO.class
+ghost/domain/draft/DraftDO.class
+ghost/domain/hibernate/HibernateUtil.class
