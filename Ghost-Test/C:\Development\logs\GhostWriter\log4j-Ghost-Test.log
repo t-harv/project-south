@@ -1,30 +1,30 @@
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:61 - Printing Composite Iterator
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - Movie
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - Star Wars
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - Trilogy
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - A New Hope
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - The Empire Strikes Back
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - Return of the Jedi
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - Movie
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - Star Wars
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - Trilogy
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - A New Hope
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - The Empire Strikes Back
-2017-05-13 23:03:12 DEBUG IdeaCompositeTest:63 - Return of the Jedi
-2017-05-13 23:03:12 DEBUG CompositeIteratorTest:49 - Printing Ideal Iterator
-2017-05-13 23:03:12 DEBUG CompositeIteratorTest:58 - Movie
-2017-05-13 23:03:12 DEBUG CompositeIteratorTest:58 - Star Wars
-2017-05-13 23:03:12 DEBUG CompositeIteratorTest:58 - Trilogy
-2017-05-13 23:03:12 DEBUG CompositeIteratorTest:58 - The Empire Strikes Back
-2017-05-13 23:03:12 DEBUG CompositeIteratorTest:58 - Return of the Jedi
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:58 - Test Scenario 1
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:66 - Printing Idea Iterator
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:70 - Movie
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:70 - Animal
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:85 - Test Scenario 2
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:93 - Printing Idea Iterator
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:97 - Movie
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:97 - Animal
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:113 - Test Scenario 3
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:121 - Printing Idea Iterator
-2017-05-13 23:03:12 DEBUG IdeaIteratorTest:134 - Movie
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:61 - Printing Composite Iterator
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - Movie
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - Star Wars
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - Trilogy
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - A New Hope
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - The Empire Strikes Back
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - Return of the Jedi
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - Movie
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - Star Wars
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - Trilogy
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - A New Hope
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - The Empire Strikes Back
+2017-05-17 02:48:36 DEBUG IdeaCompositeTest:63 - Return of the Jedi
+2017-05-17 02:48:36 DEBUG CompositeIteratorTest:49 - Printing Ideal Iterator
+2017-05-17 02:48:36 DEBUG CompositeIteratorTest:58 - Movie
+2017-05-17 02:48:36 DEBUG CompositeIteratorTest:58 - Star Wars
+2017-05-17 02:48:36 DEBUG CompositeIteratorTest:58 - Trilogy
+2017-05-17 02:48:36 DEBUG CompositeIteratorTest:58 - The Empire Strikes Back
+2017-05-17 02:48:36 DEBUG CompositeIteratorTest:58 - Return of the Jedi
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:58 - Test Scenario 1
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:66 - Printing Idea Iterator
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:70 - Movie
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:70 - Animal
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:85 - Test Scenario 2
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:93 - Printing Idea Iterator
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:97 - Movie
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:97 - Animal
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:113 - Test Scenario 3
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:121 - Printing Idea Iterator
+2017-05-17 02:48:36 DEBUG IdeaIteratorTest:134 - Movie

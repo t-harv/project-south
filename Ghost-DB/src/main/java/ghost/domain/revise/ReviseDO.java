@@ -8,9 +8,23 @@ package ghost.domain.revise;
  *
  */
 public class ReviseDO {
-	
+
 	private Integer reviseId;
 	private String revise;
+
+	public ReviseDO(){
+
+	}
+
+	public ReviseDO(String revise){
+		this.revise = revise;
+	}
+
+	public ReviseDO(Integer reviseId, String revise){
+		this.reviseId = reviseId;
+		this.revise = revise;
+	}
+
 	/**
 	 * @return the reviseId
 	 */

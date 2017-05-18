@@ -9,7 +9,21 @@ package ghost.domain.proofread;
 public class ProofReadDO {
 	private Integer proofReadId;
 	private String proofRead;
-	
+
+	public ProofReadDO(){
+
+	}
+
+	public ProofReadDO(String proofRead){
+		this.proofRead = proofRead;
+	}
+
+	public ProofReadDO(Integer proofReadId, String proofRead){
+		this.proofReadId = proofReadId;
+		this.proofRead = proofRead;
+	}
+
+
 	/**
 	 * @return the proofReadId
 	 */

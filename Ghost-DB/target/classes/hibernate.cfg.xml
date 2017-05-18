@@ -11,6 +11,11 @@
   <property name="hibernate.default_schema">GHOST_WRITER</property>
   <property name="show_sql">true</property>
   <mapping resource="DraftDO.hbm.xml"></mapping>
+  <mapping resource="EditDO.hbm.xml"></mapping>
+  <mapping resource="PlanDO.hbm.xml"></mapping>
+  <mapping resource="ProofReadDO.hbm.xml"></mapping>
+  <mapping resource="ReviseDO.hbm.xml"></mapping>
+  <mapping resource="ShapeDO.hbm.xml"></mapping>
 </session-factory>
 </hibernate-configuration>
 

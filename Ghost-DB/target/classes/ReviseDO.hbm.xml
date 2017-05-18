@@ -2,13 +2,13 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="ghost.domain.draft.DraftDO" table="DRAFT">
-		<id name="draftId" type="int">
-			<column name="DRAFTID" precision="5" scale="0" />
+	<class name="ghost.domain.revise.ReviseDO" table="REVISE">
+		<id name="reviseId" type="int">
+			<column name="REVISEID" precision="5" scale="0" />
 			<generator class="increment" />
 		</id>
-		<property name="draft" type="string">
-			<column name="DRAFT" length="4000"></column>
+		<property name="revise" type="string">
+			<column name="REVISE" length="4000"></column>
 		</property>
 	</class>
 </hibernate-mapping>
