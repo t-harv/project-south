@@ -1,13 +1,13 @@
 com/ghost/writing/Purpose.class
 com/ghost/writing/character/impl/Protagonist.class
-com/ghost/writing/Plan.class
 com/ghost/writing/FreeWrite.class
+com/ghost/writing/Plan.class
 com/ghost/writing/Audiance.class
 com/ghost/writing/character/Character.class
 com/ghost/writing/character/impl/Antagonist.class
 com/ghost/writing/Draft.class
 com/ghost/writing/Plot.class
 com/ghost/writing/Diary.class
-com/ghost/writing/Journal.class
 com/ghost/writing/Novel.class
+com/ghost/writing/Journal.class
 com/ghost/writing/Topic.class

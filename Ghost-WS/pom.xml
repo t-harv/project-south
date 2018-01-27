@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.ghost</groupId>
     <artifactId>GhostWriter</artifactId>
-    <version>7-SNAPSHOT</version>
+    <version>8-SNAPSHOT</version>
   </parent>
   <groupId>com.ghost</groupId>
   <artifactId>Ghost-WS</artifactId>

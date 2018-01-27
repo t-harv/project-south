@@ -1,5 +1,5 @@
-ghost/domain/revise/ReviseDO.class
 ghost/domain/edit/EditDO.class
+ghost/domain/revise/ReviseDO.class
 Driver.class
 ghost/domain/shape/ShapeDO.class
 ghost/domain/hibernate/HibernateUtil.class
