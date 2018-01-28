@@ -1,6 +1,9 @@
-package com.ghost.writing.components;
+package com.ghost.writing.components.dto;
 
 import java.util.Collection;
+
+import com.ghost.writing.components.dao.CharacterArch;
+import com.ghost.writing.components.dao.Relationships;
 
 /**
  * 
@@ -9,7 +12,7 @@ import java.util.Collection;
  *Character profile character arch.
  *
  */
-public class CharcterArch {
+public class CharcterArchDto implements CharacterArch {
 	private String roleInStory;
 	private String firstAppearance;
 	private Collection<Relationships> relationships;

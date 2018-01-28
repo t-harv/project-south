@@ -1,4 +1,6 @@
-package com.ghost.writing.components;
+package com.ghost.writing.components.dto;
+
+import com.ghost.writing.components.dao.SpiritualCharacteristics;
 
 /**
  * 
@@ -7,7 +9,7 @@ package com.ghost.writing.components;
  * Character Profile spiritual characteristics
  *
  */
-public class SpiritualCharacteristics {
+public class SpiritualCharacteristicsDto implements SpiritualCharacteristics {
 	private boolean beliefInGod;
 	//sprititual beliefs
 	private String belief;

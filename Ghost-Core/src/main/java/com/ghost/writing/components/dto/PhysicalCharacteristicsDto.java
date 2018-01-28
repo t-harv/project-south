@@ -1,6 +1,8 @@
-package com.ghost.writing.components;
+package com.ghost.writing.components.dto;
 
 import java.util.Collection;
+
+import com.ghost.writing.components.dao.PhysicalCharacteristics;
 
 /**
  * 
@@ -9,7 +11,7 @@ import java.util.Collection;
  * Purpose of this class is to map out characters physical characteristics.
  * 
  */
-public class PhysicalCharacteristics {
+public class PhysicalCharacteristicsDto implements PhysicalCharacteristics {
 	private String height;
 	private String weight;
 	private String race;

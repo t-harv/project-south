@@ -1,13 +1,14 @@
-package com.ghost.writing.components;
+package com.ghost.writing.components.dto;
 
 import java.util.Collection;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlRootElement;
+import com.ghost.writing.components.dao.CharacterArch;
+import com.ghost.writing.components.dao.CharacterProfile;
+import com.ghost.writing.components.dao.EmotionalCharacteristics;
+import com.ghost.writing.components.dao.IntellectualCharacteristics;
+import com.ghost.writing.components.dao.PhysicalCharacteristics;
+import com.ghost.writing.components.dao.SpiritualCharacteristics;
+
 
 /**
  * 
@@ -18,19 +19,15 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 1.  Complex Key out of ID.  The key will reside in the character table (will not be embedded (separate table)).  Actually I want to have a normal surrogate key.  I'll do the complex key later
  * 
  * 2.  Embedded table - I need to use composition to merge another object into this character object.  This will allow me to use hibernate to create a sub table out of the second object.
- * 		Example would be if i added address object to this character object.  There will be a character table for the character object and an address table for the address object.
+ * 	Example would be if i added address object to this character object.  There will be a character table for the character object and an address table for the address object.
  *
  *  Character Profile source - www.writerswrite.com/...
  */
 
-@XmlRootElement
-@Entity
-@Table(name="CHARACTER_PROFILE")
-public class CharacterProfile {
+
+public class CharacterProfileDTO implements CharacterProfile {
 	
 	//auto generated primary key
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;  //Surrogate key, means we want hibernate to do the job of populating this for us
 	private String firstName;
 	private String lastName;
@@ -55,18 +52,8 @@ public class CharacterProfile {
 	private IntellectualCharacteristics ic;
 	private EmotionalCharacteristics ec;
 	private SpiritualCharacteristics sc;
-	private CharcterArch ca;
+	private CharacterArch ca;
 	
-	
-	public void test() {
-		System.out.println(nationality.BLACK);
-	}
-	
-	
-	public static void main (String []args) {
-		CharacterProfile cp = new CharacterProfile();
-		cp.test();
-	}
 
 
 	/**

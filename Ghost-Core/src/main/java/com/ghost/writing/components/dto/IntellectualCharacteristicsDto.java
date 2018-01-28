@@ -1,6 +1,8 @@
-package com.ghost.writing.components;
+package com.ghost.writing.components.dto;
 
 import java.util.Collection;
+
+import com.ghost.writing.components.dao.IntellectualCharacteristics;
 
 /**
  * 
@@ -9,7 +11,7 @@ import java.util.Collection;
  * Character profile mapping character's intellectual characteristics.
  *
  */
-public class IntellectualCharacteristics {
+public class IntellectualCharacteristicsDto implements IntellectualCharacteristics {
 	private String educationalBackground;
 	private String intelligenceLevel;
 	private Collection<String> learningExperiences;

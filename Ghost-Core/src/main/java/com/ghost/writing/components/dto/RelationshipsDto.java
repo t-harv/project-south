@@ -1,4 +1,6 @@
-package com.ghost.writing.components;
+package com.ghost.writing.components.dto;
+
+import com.ghost.writing.components.dao.Relationships;
 
 /**
  * 
@@ -10,7 +12,7 @@ package com.ghost.writing.components;
  * who do not exist yet you get a constraint error.  Unless if the character do not exist, you add them! 
  *
  */
-public class Relationships {
+public class RelationshipsDto implements Relationships {
 	private String characterName;
 	private String relationship;
 

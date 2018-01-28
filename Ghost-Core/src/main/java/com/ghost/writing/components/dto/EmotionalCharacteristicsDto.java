@@ -1,6 +1,8 @@
-package com.ghost.writing.components;
+package com.ghost.writing.components.dto;
 
 import java.util.Collection;
+
+import com.ghost.writing.components.dao.EmotionalCharacteristics;
 
 /**
  * 
@@ -11,7 +13,7 @@ import java.util.Collection;
  * make some of these booleans
  *
  */
-public class EmotionalCharacteristics {
+public class EmotionalCharacteristicsDto implements EmotionalCharacteristics {
 	private Collection<String> strengths;
 	private Collection<String> weakness;
 	private boolean introvert;
