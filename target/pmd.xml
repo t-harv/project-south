@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.3.2" timestamp="2018-05-16T23:58:57.524">
+<file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dao/impl/PhysicalCharacteristicsDaoImpl.java">
+<violation beginline="7" endline="7" begincolumn="71" endcolumn="72" rule="UnusedFormalParameter" ruleset="Unused Code" package="com.ghost.writing.character.dao.impl" class="PhysicalCharacteristicsDaoImpl" method="PhysicalCharacteristicsDaoImpl" variable="pc" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'pc'.
+</violation>
+</file>
+<file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/CharacterProfile.java">
+<violation beginline="16" endline="16" begincolumn="16" endcolumn="28" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getId" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="20" endline="20" begincolumn="16" endcolumn="35" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setId" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="24" endline="24" begincolumn="16" endcolumn="37" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getFirstName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="28" endline="28" begincolumn="16" endcolumn="51" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setFirstName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="32" endline="32" begincolumn="16" endcolumn="36" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getLastName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="36" endline="36" begincolumn="16" endcolumn="49" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setLastName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="40" endline="40" begincolumn="16" endcolumn="41" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getCharacterName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="44" endline="44" begincolumn="16" endcolumn="59" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setCharacterName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="48" endline="48" begincolumn="16" endcolumn="36" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getHomeTown" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="52" endline="52" begincolumn="16" endcolumn="49" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setHomeTown" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="56" endline="56" begincolumn="16" endcolumn="35" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getAddress" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="60" endline="60" begincolumn="16" endcolumn="47" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setAddress" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="64" endline="64" begincolumn="16" endcolumn="38" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getOccupation" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="68" endline="68" begincolumn="16" endcolumn="53" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setOccupation" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="72" endline="72" begincolumn="16" endcolumn="34" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getIncome" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="76" endline="76" begincolumn="16" endcolumn="45" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setIncome" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="80" endline="80" begincolumn="16" endcolumn="52" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getTalentSkills" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="84" endline="84" begincolumn="16" endcolumn="69" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setTalentSkills" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="88" endline="88" begincolumn="16" endcolumn="34" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getSalary" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="92" endline="92" begincolumn="16" endcolumn="45" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setSalary" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="96" endline="96" begincolumn="16" endcolumn="38" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getBirthOrder" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="101" endline="101" begincolumn="16" endcolumn="53" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setBirthOrder" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="105" endline="105" begincolumn="16" endcolumn="48" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getSiblings" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="109" endline="109" begincolumn="16" endcolumn="61" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setSiblings" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="113" endline="113" begincolumn="16" endcolumn="34" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getSpouse" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="117" endline="117" begincolumn="16" endcolumn="45" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setSpouse" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="121" endline="121" begincolumn="16" endcolumn="48" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getChildren" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="125" endline="125" begincolumn="16" endcolumn="61" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setChildren" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="129" endline="129" begincolumn="16" endcolumn="52" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getGrandParents" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="133" endline="133" begincolumn="16" endcolumn="69" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setGrandParents" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="137" endline="137" begincolumn="16" endcolumn="53" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getGrandChildren" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="142" endline="142" begincolumn="16" endcolumn="71" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setGrandChildren" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="147" endline="147" begincolumn="16" endcolumn="56" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="getSignificantOther" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="152" endline="152" begincolumn="16" endcolumn="77" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setSignificantOther" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+</pmd>
