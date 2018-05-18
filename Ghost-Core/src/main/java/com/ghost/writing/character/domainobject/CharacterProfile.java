@@ -6,6 +6,8 @@ import java.util.Collection;
  * 
  * @author toyan
  * contract between character profile DTO and DAO
+ * 
+ * Source for the profile - https://www.writerswrite.com/journal/jun98/how-to-create-a-character-profile-6986
  *
  */
 public interface CharacterProfile {
