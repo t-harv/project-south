@@ -50,23 +50,23 @@ public class CharacterProfileDaoImpl implements CharacterProfile {
 	private CharacterArch ca;
 	
 	public CharacterProfileDaoImpl(CharacterProfile cp) {
-		id = cp.getId();
-		firstName = cp.getFirstName();
-		lastName = cp.getLastName();
-		characterName = cp.getCharacterName();
-		homeTown = cp.getHomeTown();
-		address = cp.getAddress();
-		occupation = cp.getOccupation();
-		income = cp.getIncome();
-		talentSkills = cp.getTalentSkills();
-		salary = cp.getSalary();
-		birthOrder = cp.getBirthOrder();
-		siblings = cp.getSiblings();
-		spouse = cp.getSpouse();
-		children = cp.getChildren();
-		grandParents = cp.getGrandParents();
-		grandChildren = cp.getGrandChildren();
-		significantOther = cp.getSignificantOther();
+//		id = cp.getId();
+//		firstName = cp.getFirstName();
+//		lastName = cp.getLastName();
+//		characterName = cp.getCharacterName();
+//		homeTown = cp.getHomeTown();
+//		address = cp.getAddress();
+//		occupation = cp.getOccupation();
+//		income = cp.getIncome();
+//		talentSkills = cp.getTalentSkills();
+//		salary = cp.getSalary();
+//		birthOrder = cp.getBirthOrder();
+//		siblings = cp.getSiblings();
+//		spouse = cp.getSpouse();
+//		children = cp.getChildren();
+//		grandParents = cp.getGrandParents();
+//		grandChildren = cp.getGrandChildren();
+//		significantOther = cp.getSignificantOther();
 		
 //		pc = new PhysicalCharacteristicsDaoImpl(cp.get);
 		

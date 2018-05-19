@@ -12,6 +12,7 @@ com/ghost/writing/components/Purpose.class
 com/ghost/writing/character/domainobject/CharacterProfile.class
 com/ghost/writing/components/Topic.class
 com/ghost/writing/character/domainobject/IntellectualCharacteristics.class
+com/ghost/writing/character/domainobject/impl/CharacterProfileImpl.class
 com/ghost/writing/components/Diary.class
 com/ghost/writing/character/dto/SpiritualCharacteristicsDto.class
 com/ghost/writing/components/Audiance.class
@@ -25,6 +26,7 @@ com/ghost/writing/character/domainobject/PhysicalCharacteristics.class
 com/ghost/writing/character/impl/Protagonist.class
 com/ghost/writing/components/Novel.class
 com/ghost/writing/character/dao/impl/CharacterProfileDaoImpl.class
+com/ghost/writing/character/domainobject/CharacterProfile_outdate.class
 com/ghost/writing/character/domainobject/impl/CharacterArchImpl.class
 com/ghost/writing/character/domainobject/SpiritualCharacteristics.class
 com/ghost/writing/components/Nationality.class

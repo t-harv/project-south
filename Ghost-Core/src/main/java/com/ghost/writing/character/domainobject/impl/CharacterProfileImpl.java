@@ -3,7 +3,12 @@ package com.ghost.writing.character.domainobject.impl;
 
 import java.util.List;
 import com.ghost.writing.character.dao.impl.CharacterProfileDaoImpl.Nationality;
+import com.ghost.writing.character.domainobject.CharacterArch;
 import com.ghost.writing.character.domainobject.CharacterProfile;
+import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
+import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
+import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
+import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
 
 
 public class CharacterProfileImpl implements CharacterProfile{
@@ -21,13 +26,20 @@ public class CharacterProfileImpl implements CharacterProfile{
 	private List<String> talents;
 	private List<String> skills;
 	private String salary;
-	private String birthOrder;
+	private Integer birthOrder;
 	private List<String> siblings;
 	private List<String> spouse;
 	private List<String> children;
 	private List<String> grandParents;
 	private List<String> grandChildren;
 	private List<String> significantOthers;
+	
+	
+	private EmotionalCharacteristics ec;
+	private IntellectualCharacteristics ic;
+	private PhysicalCharacteristics pc;
+	private SpiritualCharacteristics sc;
+	private CharacterArch ca;
 	
 	/**
 	 * @return the name
@@ -200,13 +212,13 @@ public class CharacterProfileImpl implements CharacterProfile{
 	/**
 	 * @return the birthOrder
 	 */
-	public String getBirthOrder() {
+	public Integer getBirthOrder() {
 		return birthOrder;
 	}
 	/**
 	 * @param birthOrder the birthOrder to set
 	 */
-	public void setBirthOrder(String birthOrder) {
+	public void setBirthOrder(Integer birthOrder) {
 		this.birthOrder = birthOrder;
 	}
 	/**
@@ -280,5 +292,65 @@ public class CharacterProfileImpl implements CharacterProfile{
 	 */
 	public void setSignificantOthers(List<String> significantOthers) {
 		this.significantOthers = significantOthers;
+	}
+	/**
+	 * @return the ec
+	 */
+	public EmotionalCharacteristics getEc() {
+		return ec;
+	}
+	/**
+	 * @param ec the ec to set
+	 */
+	public void setEc(EmotionalCharacteristics ec) {
+		this.ec = ec;
+	}
+	/**
+	 * @return the ic
+	 */
+	public IntellectualCharacteristics getIc() {
+		return ic;
+	}
+	/**
+	 * @param ic the ic to set
+	 */
+	public void setIc(IntellectualCharacteristics ic) {
+		this.ic = ic;
+	}
+	/**
+	 * @return the pc
+	 */
+	public PhysicalCharacteristics getPc() {
+		return pc;
+	}
+	/**
+	 * @param pc the pc to set
+	 */
+	public void setPc(PhysicalCharacteristics pc) {
+		this.pc = pc;
+	}
+	/**
+	 * @return the sc
+	 */
+	public SpiritualCharacteristics getSc() {
+		return sc;
+	}
+	/**
+	 * @param sc the sc to set
+	 */
+	public void setSc(SpiritualCharacteristics sc) {
+		this.sc = sc;
+	}
+	/**
+	 * @return the ca
+	 */
+	public CharacterArch getCa() {
+		return ca;
+	}
+	/**
+	 * @param ca the ca to set
+	 */
+	public void setCa(CharacterArch ca) {
+		this.ca = ca;
 	}
 }

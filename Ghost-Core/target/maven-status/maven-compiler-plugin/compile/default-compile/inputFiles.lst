@@ -15,9 +15,11 @@
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dto/CharacterProfileDTO.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/components/Topic.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/impl/CharacterArchImpl.java
+/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/impl/CharacterProfileImpl.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/components/Purpose.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/SpiritualCharacteristics.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/components/Journal.java
+/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/CharacterProfile_outdate.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/CharacterProfile.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dao/impl/CharacterProfileDaoImpl.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dto/SpiritualCharacteristicsDto.java
