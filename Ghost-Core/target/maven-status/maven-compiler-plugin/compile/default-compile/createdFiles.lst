@@ -5,7 +5,6 @@ com/ghost/writing/character/domainobject/impl/IntellectualCharacteristicsImpl.cl
 com/ghost/writing/components/Plot.class
 com/ghost/writing/character/domainobject/impl/PhysicalCharacteristicsImpl.class
 com/ghost/writing/character/dto/IntellectualCharacteristicsDto.class
-com/ghost/writing/character/dao/impl/CharacterProfileDaoImpl$Nationality.class
 com/ghost/writing/components/Journal.class
 com/ghost/writing/character/domainobject/EmotionalCharacteristics.class
 com/ghost/writing/components/Purpose.class

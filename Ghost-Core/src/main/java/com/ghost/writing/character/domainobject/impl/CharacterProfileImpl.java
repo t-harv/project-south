@@ -2,20 +2,21 @@ package com.ghost.writing.character.domainobject.impl;
 
 
 import java.util.List;
-import com.ghost.writing.character.dao.impl.CharacterProfileDaoImpl.Nationality;
 import com.ghost.writing.character.domainobject.CharacterArch;
 import com.ghost.writing.character.domainobject.CharacterProfile;
 import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
 import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
 import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
 import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
+import com.ghost.writing.components.Nationality;
+import com.ghost.writing.components.Nationality.Race;
 
 
 public class CharacterProfileImpl implements CharacterProfile{
 	private String name;
 	private String firstName;
 	private String lastName;
-	private Nationality nat;
+	private Race nat;
 	private String socioeconomicLevelAsAChild;
 	private String socioeconomicLevelAsAnAdult;
 	private String homeTown;
@@ -28,7 +29,7 @@ public class CharacterProfileImpl implements CharacterProfile{
 	private String salary;
 	private Integer birthOrder;
 	private List<String> siblings;
-	private List<String> spouse;
+	private String spouse;
 	private List<String> children;
 	private List<String> grandParents;
 	private List<String> grandChildren;
@@ -80,13 +81,13 @@ public class CharacterProfileImpl implements CharacterProfile{
 	/**
 	 * @return the nat
 	 */
-	public Nationality getNat() {
+	public Race getNat() {
 		return nat;
 	}
 	/**
 	 * @param nat the nat to set
 	 */
-	public void setNat(Nationality nat) {
+	public void setNat(Race nat) {
 		this.nat = nat;
 	}
 	/**
@@ -236,13 +237,13 @@ public class CharacterProfileImpl implements CharacterProfile{
 	/**
 	 * @return the spouse
 	 */
-	public List<String> getSpouse() {
+	public String getSpouse() {
 		return spouse;
 	}
 	/**
 	 * @param spouse the spouse to set
 	 */
-	public void setSpouse(List<String> spouse) {
+	public void setSpouse(String spouse) {
 		this.spouse = spouse;
 	}
 	/**

@@ -13,10 +13,10 @@ public class EmotionalCharacteristicsImpl implements EmotionalCharacteristics {
 	private String changeManagement;
 	private String lossManagement;
 	private String wantOutOfLife; //what does character want out of life
-	private String motivations; // what motivate character
+	private List<String> motivations; // what motivate character
 	private String frightens; 
 	private String happy; //what makes character happy
-	private String judgmental; //is the character judgmental of others
+	private Boolean judgmental; //is the character judgmental of others
 	private boolean polite;
 	private boolean rude;
 	
@@ -119,13 +119,13 @@ public class EmotionalCharacteristicsImpl implements EmotionalCharacteristics {
 	/**
 	 * @return the motivations
 	 */
-	public String getMotivations() {
+	public List<String> getMotivations() {
 		return motivations;
 	}
 	/**
 	 * @param motivations the motivations to set
 	 */
-	public void setMotivations(String motivations) {
+	public void setMotivations(List<String> motivations) {
 		this.motivations = motivations;
 	}
 	/**
@@ -155,13 +155,13 @@ public class EmotionalCharacteristicsImpl implements EmotionalCharacteristics {
 	/**
 	 * @return the judgmental
 	 */
-	public String getJudgmental() {
+	public Boolean getJudgmental() {
 		return judgmental;
 	}
 	/**
 	 * @param judgmental the judgmental to set
 	 */
-	public void setJudgmental(String judgmental) {
+	public void setJudgmental(Boolean judgmental) {
 		this.judgmental = judgmental;
 	}
 	/**

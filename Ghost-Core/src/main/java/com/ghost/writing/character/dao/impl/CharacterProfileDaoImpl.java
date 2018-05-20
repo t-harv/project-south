@@ -28,7 +28,6 @@ public class CharacterProfileDaoImpl implements CharacterProfile {
 	private String lastName;
 	private String characterName;
 	//private String nationality;  //can i have an enumeration?
-	public enum Nationality{BLACK, WHITE, ALASKIAN ,  HISPANIC, INDIAN, ASIAN, OTHER}; 
 	private String homeTown;
 	private String address;
 	private String occupation;
