@@ -19,6 +19,7 @@ com/ghost/writing/character/dto/CharacterProfileDTO.class
 com/ghost/writing/components/Plan.class
 com/ghost/writing/components/FreeWrite.class
 com/ghost/writing/character/dao/impl/PhysicalCharacteristicsDaoImpl.class
+com/ghost/writing/components/Address.class
 com/ghost/writing/character/domainobject/impl/SpiritualCharacteristicsImpl.class
 com/ghost/writing/character/domainobject/impl/EmotionalCharacteristicsImpl.class
 com/ghost/writing/character/domainobject/PhysicalCharacteristics.class
