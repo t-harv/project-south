@@ -13,6 +13,7 @@ import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
 import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
 import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
 import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
+import com.ghost.writing.components.Address;
 import com.ghost.writing.components.Nationality.Race;
 
 public class CharacterProfileImplTest {
@@ -27,40 +28,40 @@ public class CharacterProfileImplTest {
 		((CharacterProfileImpl)jala).setBirthOrder(3);
 		List<String> jalaChildren = new ArrayList<String>();
 		jalaChildren.add("BabyL Haley");
-		((CharacterProfileImpl)jala).setChildren(jalaChildren); //BabyL & Toyce
+//		((CharacterProfileImpl)jala).setChildren(jalaChildren); //BabyL & Toyce
 		((CharacterProfileImpl)jala).setCurrentAddress("14306 Sunset View Dr, Bowie MD 20720");
 		((CharacterProfileImpl)jala).setFirstName("Jala");
 		List<String> jalaGrandChildren = new ArrayList<String>();
-		((CharacterProfileImpl)jala).setGrandChildren(jalaGrandChildren);
+//		((CharacterProfileImpl)jala).setGrandChildren(jalaGrandChildren);
 		List<String> jalaGrandParents = new ArrayList<String>();
 		jalaGrandParents.add("Grandma JJ");
 		jalaGrandParents.add("Grandpa JJ");
-		((CharacterProfileImpl)jala).setGrandParents(jalaGrandParents);
+//		((CharacterProfileImpl)jala).setGrandParents(jalaGrandParents);
 		((CharacterProfileImpl)jala).setHomeTown("Japan Okinawa");
 		((CharacterProfileImpl)jala).setIncome("400k");
 		((CharacterProfileImpl)jala).setLastName("Haley");
 		((CharacterProfileImpl)jala).setName("Jala Minksy Haley");
 		((CharacterProfileImpl)jala).setNat(Race.BLACK);
 		((CharacterProfileImpl)jala).setOccupation("Software Developer");
-		List<String> jalaOtherAddresses = new ArrayList<String>();				
+		List<Address> jalaOtherAddresses = new ArrayList<Address>();				
 		((CharacterProfileImpl)jala).setOtherAddresses(jalaOtherAddresses);
 		((CharacterProfileImpl)jala).setSalary("400k");
 		List<String> jalaSiblings = new ArrayList<String>();
 		jalaSiblings.add("DeeDee Paterson");
 		jalaSiblings.add("Winston Curry");
-		((CharacterProfileImpl)jala).setSiblings(jalaSiblings);
+//		((CharacterProfileImpl)jala).setSiblings(jalaSiblings);
 		List<String> jalaSignificantOthers = new ArrayList<String>();
 		jalaSignificantOthers.add("Toyan Haley");
-		((CharacterProfileImpl)jala).setSignificantOthers(jalaSignificantOthers);
+//		((CharacterProfileImpl)jala).setSignificantOthers(jalaSignificantOthers);
 		List<String> jalaSkills = new ArrayList<String>();
 		jalaSkills.add("Mommy Skills");
-		((CharacterProfileImpl)jala).setSkills(jalaSkills);
+//		((CharacterProfileImpl)jala).setSkills(jalaSkills);
 		((CharacterProfileImpl)jala).setSocioeconomicLevelAsAChild("Middle Class");
 		((CharacterProfileImpl)jala).setSocioeconomicLevelAsAnAdult("Middle Class");
 		((CharacterProfileImpl)jala).setSpouse("Toyan Haley");
 		List<String> jalaTalents = new ArrayList<String>();
 		jalaTalents.add("Tap Dancing");
-		((CharacterProfileImpl)jala).setTalents(jalaTalents);
+//		((CharacterProfileImpl)jala).setTalents(jalaTalents);
 		
 		
 		
@@ -74,7 +75,7 @@ public class CharacterProfileImplTest {
 		List<String> jalaSpiritualBeliefs = new ArrayList<String>();
 		jalaSpiritualBeliefs.add("Guidance");
 		((SpiritualCharacteristicsImpl)sc).setSpiritualBeliefs(jalaSpiritualBeliefs);
-		((CharacterProfileImpl)jala).setSc(sc);
+//		((CharacterProfileImpl)jala).setSc(sc);
 		
 		
 		
@@ -112,7 +113,7 @@ public class CharacterProfileImplTest {
 		((PhysicalCharacteristicsImpl)pc).setSpeachPatterns("Perfact Grammar and English");
 		((PhysicalCharacteristicsImpl)pc).setStyle("What's popular");
 		((PhysicalCharacteristicsImpl)pc).setWeight(185);
-		((CharacterProfileImpl)jala).setPc(pc);
+//		((CharacterProfileImpl)jala).setPc(pc);
 		
 		
 		
@@ -139,7 +140,7 @@ public class CharacterProfileImplTest {
 		List<String> jalaShortTermGoals = new ArrayList<String>();
 		jalaShortTermGoals.add("Another Baby");
 		((IntellectualCharacteristicsImpl)ic).setShortTermGoals(jalaShortTermGoals);
-		((CharacterProfileImpl)jala).setIc(ic);
+//		((CharacterProfileImpl)jala).setIc(ic);
 		
 		//Emotional Characteristics
 		EmotionalCharacteristics ec = new EmotionalCharacteristicsImpl();
@@ -164,7 +165,7 @@ public class CharacterProfileImplTest {
 		List<String> jalaWeaknesses = new ArrayList<String>();
 		jalaWeaknesses.add("Food!");
 		((EmotionalCharacteristicsImpl)ec).setWeaknesses(jalaWeaknesses);
-		((CharacterProfileImpl)jala).setEc(ec);
+//		((CharacterProfileImpl)jala).setEc(ec);
 		
 		
 		//character arch
@@ -173,8 +174,8 @@ public class CharacterProfileImplTest {
 		((CharacterArchImpl)ca).setFinale("Unknown");
 		((CharacterArchImpl)ca).setFirstAppearance("2013, Washington DC");
 		List<CharacterProfile> jalaRelationships = new ArrayList<CharacterProfile>();
-		((CharacterArchImpl)ca).setRelationships(jalaRelationships);
-		((CharacterProfileImpl)jala).setCa(ca);
+//		((CharacterArchImpl)ca).setRelationships(jalaRelationships);
+//		((CharacterProfileImpl)jala).setCa(ca);
 	}
 	
 	@Test

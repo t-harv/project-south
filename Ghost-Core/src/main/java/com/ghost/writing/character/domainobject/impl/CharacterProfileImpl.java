@@ -2,17 +2,26 @@ package com.ghost.writing.character.domainobject.impl;
 
 
 import java.util.List;
-import com.ghost.writing.character.domainobject.CharacterArch;
+
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
 import com.ghost.writing.character.domainobject.CharacterProfile;
-import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
-import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
-import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
-import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
-import com.ghost.writing.components.Nationality;
+import com.ghost.writing.components.Address;
 import com.ghost.writing.components.Nationality.Race;
 
-
+@Entity
+@Table(name="CharacterProfile")
 public class CharacterProfileImpl implements CharacterProfile{
+	@Id
+	private long id;
 	private String name;
 	private String firstName;
 	private String lastName;
@@ -21,26 +30,28 @@ public class CharacterProfileImpl implements CharacterProfile{
 	private String socioeconomicLevelAsAnAdult;
 	private String homeTown;
 	private String currentAddress;
-	private List<String> otherAddresses;
+	
+	@ElementCollection
+	private List<Address> otherAddresses;
 	private String occupation;
 	private String income;
-	private List<String> talents;
-	private List<String> skills;
+//	private List<String> talents;
+//	private List<String> skills;
 	private String salary;
 	private Integer birthOrder;
-	private List<String> siblings;
+//	private List<String> siblings;
 	private String spouse;
-	private List<String> children;
-	private List<String> grandParents;
-	private List<String> grandChildren;
-	private List<String> significantOthers;
+//	private List<String> children;
+//	private List<String> grandParents;
+//	private List<String> grandChildren;
+//	private List<String> significantOthers;
 	
 	
-	private EmotionalCharacteristics ec;
-	private IntellectualCharacteristics ic;
-	private PhysicalCharacteristics pc;
-	private SpiritualCharacteristics sc;
-	private CharacterArch ca;
+//	private EmotionalCharacteristics ec;
+//	private IntellectualCharacteristics ic;
+//	private PhysicalCharacteristics pc;
+//	private SpiritualCharacteristics sc;
+//	private CharacterArch ca;
 	
 	/**
 	 * @return the name
@@ -141,13 +152,15 @@ public class CharacterProfileImpl implements CharacterProfile{
 	/**
 	 * @return the otherAddresses
 	 */
-	public List<String> getOtherAddresses() {
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "CharacterProfile")
+	@Cascade({CascadeType.SAVE_UPDATE})
+	public List<Address> getOtherAddresses() {
 		return otherAddresses;
 	}
 	/**
 	 * @param otherAddresses the otherAddresses to set
 	 */
-	public void setOtherAddresses(List<String> otherAddresses) {
+	public void setOtherAddresses(List<Address> otherAddresses) {
 		this.otherAddresses = otherAddresses;
 	}
 	/**
@@ -174,30 +187,30 @@ public class CharacterProfileImpl implements CharacterProfile{
 	public void setIncome(String income) {
 		this.income = income;
 	}
-	/**
-	 * @return the talents
-	 */
-	public List<String> getTalents() {
-		return talents;
-	}
-	/**
-	 * @param talents the talents to set
-	 */
-	public void setTalents(List<String> talents) {
-		this.talents = talents;
-	}
-	/**
-	 * @return the skills
-	 */
-	public List<String> getSkills() {
-		return skills;
-	}
-	/**
-	 * @param skills the skills to set
-	 */
-	public void setSkills(List<String> skills) {
-		this.skills = skills;
-	}
+//	/**
+//	 * @return the talents
+//	 */
+//	public List<String> getTalents() {
+//		return talents;
+//	}
+//	/**
+//	 * @param talents the talents to set
+//	 */
+//	public void setTalents(List<String> talents) {
+//		this.talents = talents;
+//	}
+//	/**
+//	 * @return the skills
+//	 */
+//	public List<String> getSkills() {
+//		return skills;
+//	}
+//	/**
+//	 * @param skills the skills to set
+//	 */
+//	public void setSkills(List<String> skills) {
+//		this.skills = skills;
+//	}
 	/**
 	 * @return the salary
 	 */
@@ -222,18 +235,18 @@ public class CharacterProfileImpl implements CharacterProfile{
 	public void setBirthOrder(Integer birthOrder) {
 		this.birthOrder = birthOrder;
 	}
-	/**
-	 * @return the siblings
-	 */
-	public List<String> getSiblings() {
-		return siblings;
-	}
-	/**
-	 * @param siblings the siblings to set
-	 */
-	public void setSiblings(List<String> siblings) {
-		this.siblings = siblings;
-	}
+//	/**
+//	 * @return the siblings
+//	 */
+//	public List<String> getSiblings() {
+//		return siblings;
+//	}
+//	/**
+//	 * @param siblings the siblings to set
+//	 */
+//	public void setSiblings(List<String> siblings) {
+//		this.siblings = siblings;
+//	}
 	/**
 	 * @return the spouse
 	 */
@@ -246,112 +259,94 @@ public class CharacterProfileImpl implements CharacterProfile{
 	public void setSpouse(String spouse) {
 		this.spouse = spouse;
 	}
-	/**
-	 * @return the children
-	 */
-	public List<String> getChildren() {
-		return children;
-	}
-	/**
-	 * @param children the children to set
-	 */
-	public void setChildren(List<String> children) {
-		this.children = children;
-	}
-	/**
-	 * @return the grandParents
-	 */
-	public List<String> getGrandParents() {
-		return grandParents;
-	}
-	/**
-	 * @param grandParents the grandParents to set
-	 */
-	public void setGrandParents(List<String> grandParents) {
-		this.grandParents = grandParents;
-	}
-	/**
-	 * @return the grandChildren
-	 */
-	public List<String> getGrandChildren() {
-		return grandChildren;
-	}
-	/**
-	 * @param grandChildren the grandChildren to set
-	 */
-	public void setGrandChildren(List<String> grandChildren) {
-		this.grandChildren = grandChildren;
-	}
-	/**
-	 * @return the significantOthers
-	 */
-	public List<String> getSignificantOthers() {
-		return significantOthers;
-	}
-	/**
-	 * @param significantOthers the significantOthers to set
-	 */
-	public void setSignificantOthers(List<String> significantOthers) {
-		this.significantOthers = significantOthers;
-	}
+//	/**
+//	 * @return the children
+//	 */
+//	public List<String> getChildren() {
+//		return children;
+//	}
+//	/**
+//	 * @param children the children to set
+//	 */
+//	public void setChildren(List<String> children) {
+//		this.children = children;
+//	}
+//	/**
+//	 * @return the grandParents
+//	 */
+//	public List<String> getGrandParents() {
+//		return grandParents;
+//	}
 	/**
 	 * @return the ec
 	 */
-	public EmotionalCharacteristics getEc() {
-		return ec;
+//	public EmotionalCharacteristics getEc() {
+//		return ec;
+//	}
+//	/**
+//	 * @param ec the ec to set
+//	 */
+//	public void setEc(EmotionalCharacteristics ec) {
+//		this.ec = ec;
+//	}
+//	/**
+//	 * @return the ic
+//	 */
+//	public IntellectualCharacteristics getIc() {
+//		return ic;
+//	}
+//	/**
+//	 * @param ic the ic to set
+//	 */
+//	public void setIc(IntellectualCharacteristics ic) {
+//		this.ic = ic;
+//	}
+//	/**
+//	 * @return the pc
+//	 */
+//	public PhysicalCharacteristics getPc() {
+//		return pc;
+//	}
+//	/**
+//	 * @param pc the pc to set
+//	 */
+//	public void setPc(PhysicalCharacteristics pc) {
+//		this.pc = pc;
+//	}
+//	/**
+//	 * @return the sc
+//	 */
+//	public SpiritualCharacteristics getSc() {
+//		return sc;
+//	}
+//	/**
+//	 * @param sc the sc to set
+//	 */
+//	public void setSc(SpiritualCharacteristics sc) {
+//		this.sc = sc;
+//	}
+//	/**
+//	 * @return the ca
+//	 */
+//	public CharacterArch getCa() {
+//		return ca;
+//	}
+//	/**
+//	 * @param ca the ca to set
+//	 */
+//	public void setCa(CharacterArch ca) {
+//		this.ca = ca;
+//	}
+	/**
+	 * @return the id
+	 */
+	public long getId() {
+		return id;
 	}
 	/**
-	 * @param ec the ec to set
+	 * @param id the id to set
 	 */
-	public void setEc(EmotionalCharacteristics ec) {
-		this.ec = ec;
-	}
-	/**
-	 * @return the ic
-	 */
-	public IntellectualCharacteristics getIc() {
-		return ic;
-	}
-	/**
-	 * @param ic the ic to set
-	 */
-	public void setIc(IntellectualCharacteristics ic) {
-		this.ic = ic;
-	}
-	/**
-	 * @return the pc
-	 */
-	public PhysicalCharacteristics getPc() {
-		return pc;
-	}
-	/**
-	 * @param pc the pc to set
-	 */
-	public void setPc(PhysicalCharacteristics pc) {
-		this.pc = pc;
-	}
-	/**
-	 * @return the sc
-	 */
-	public SpiritualCharacteristics getSc() {
-		return sc;
-	}
-	/**
-	 * @param sc the sc to set
-	 */
-	public void setSc(SpiritualCharacteristics sc) {
-		this.sc = sc;
-	}
-	/**
-	 * @return the ca
-	 */
-	public CharacterArch getCa() {
-		return ca;
-	}
-	/**
-	 * @param ca the ca to set
-	 */
-	public void setCa(CharacterArch ca) {
-		this.ca = ca;
+	public void setId(long id) {
+		this.id = id;
 	}
 }

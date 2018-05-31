@@ -19,7 +19,7 @@
     <property name="basedir" value="/home/toyan/Development/git/project-south/Ghost-DB"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="/home/toyan/Development/git/project-south/Ghost-DB/target/surefire/surefirebooter7248754937811246915.jar"/>
+    <property name="surefire.real.class.path" value="/home/toyan/Development/git/project-south/Ghost-DB/target/surefire/surefirebooter1271114031901734591.jar"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
@@ -42,7 +42,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
-    <property name="sun.java.command" value="/home/toyan/Development/git/project-south/Ghost-DB/target/surefire/surefirebooter7248754937811246915.jar /home/toyan/Development/git/project-south/Ghost-DB/target/surefire/surefire6047525609148158906tmp /home/toyan/Development/git/project-south/Ghost-DB/target/surefire/surefire79701581736633730tmp"/>
+    <property name="sun.java.command" value="/home/toyan/Development/git/project-south/Ghost-DB/target/surefire/surefirebooter1271114031901734591.jar /home/toyan/Development/git/project-south/Ghost-DB/target/surefire/surefire9047313170815967642tmp /home/toyan/Development/git/project-south/Ghost-DB/target/surefire/surefire4111863396552087226tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
