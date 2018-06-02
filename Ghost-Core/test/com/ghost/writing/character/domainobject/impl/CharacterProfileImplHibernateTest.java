@@ -12,7 +12,7 @@ public class CharacterProfileImplHibernateTest {
 
 		try{
 			
-			System.out.println(((CharacterProfileImpl)jala.getJala()).getOtherAddresses().size());
+//			System.out.println(((CharacterProfileImpl)jala.getJala()).getOtherAddresses().size());
 			
 //			Configuration configuration = new Configuration();
 //			configuration.addAnnotatedClass(CharacterArchImpl.class);

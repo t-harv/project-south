@@ -13,7 +13,7 @@ import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
 import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
 import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
 import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
-import com.ghost.writing.components.Address;
+import com.ghost.writing.components.EmbeddedAddressTest;
 import com.ghost.writing.components.Nationality.Race;
 
 public class CharacterProfileImplTest {
@@ -43,8 +43,8 @@ public class CharacterProfileImplTest {
 		((CharacterProfileImpl)jala).setName("Jala Minksy Haley");
 		((CharacterProfileImpl)jala).setNat(Race.BLACK);
 		((CharacterProfileImpl)jala).setOccupation("Software Developer");
-		List<Address> jalaOtherAddresses = new ArrayList<Address>();				
-		((CharacterProfileImpl)jala).setOtherAddresses(jalaOtherAddresses);
+		List<EmbeddedAddressTest> jalaOtherAddresses = new ArrayList<EmbeddedAddressTest>();				
+//		((CharacterProfileImpl)jala).setOtherAddresses(jalaOtherAddresses);
 		((CharacterProfileImpl)jala).setSalary("400k");
 		List<String> jalaSiblings = new ArrayList<String>();
 		jalaSiblings.add("DeeDee Paterson");

@@ -38,3 +38,4 @@ com/ghost/writing/character/dto/CharacterProfileDTO$Nationality.class
 com/ghost/writing/character/dto/EmotionalCharacteristicsDto.class
 com/ghost/writing/components/Draft.class
 com/ghost/writing/components/Nationality$Race.class
+com/ghost/writing/components/EmbeddedAddressTest.class

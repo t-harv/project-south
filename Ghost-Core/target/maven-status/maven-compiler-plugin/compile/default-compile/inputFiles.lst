@@ -24,6 +24,7 @@
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/CharacterProfile.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dao/impl/CharacterProfileDaoImpl.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dto/SpiritualCharacteristicsDto.java
+/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/components/EmbeddedAddressTest.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/impl/PhysicalCharacteristicsImpl.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dto/EmotionalCharacteristicsDto.java
 /home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/components/Audiance.java

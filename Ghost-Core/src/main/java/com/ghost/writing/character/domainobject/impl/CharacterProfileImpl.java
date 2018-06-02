@@ -1,11 +1,18 @@
 package com.ghost.writing.character.domainobject.impl;
 
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
+import javax.persistence.CollectionTable;
 import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -15,12 +22,14 @@ import org.hibernate.annotations.CascadeType;
 
 import com.ghost.writing.character.domainobject.CharacterProfile;
 import com.ghost.writing.components.Address;
+import com.ghost.writing.components.EmbeddedAddressTest;
 import com.ghost.writing.components.Nationality.Race;
 
 @Entity
 @Table(name="CharacterProfile")
 public class CharacterProfileImpl implements CharacterProfile{
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	private String name;
 	private String firstName;
@@ -32,7 +41,17 @@ public class CharacterProfileImpl implements CharacterProfile{
 	private String currentAddress;
 	
 	@ElementCollection
-	private List<Address> otherAddresses;
+//	@OneToMany(fetch = FetchType.LAZY, mappedBy = "controlRuleAttribPK.controlRuleId")
+//	@Cascade(CascadeType.ALL)
+	@CollectionTable(name="Address")
+	private Set<Address> listofAddresses = new HashSet<Address>();  //try to spring load this object instead of creating a new object here
+	
+	
+//	@ElementCollection
+	
+//	private List<Address> otherAddresses;
+//	@Embedded
+//	private EmbeddedAddressTest otherAddresses;
 	private String occupation;
 	private String income;
 //	private List<String> talents;
@@ -149,20 +168,35 @@ public class CharacterProfileImpl implements CharacterProfile{
 	public void setCurrentAddress(String currentAddress) {
 		this.currentAddress = currentAddress;
 	}
-	/**
-	 * @return the otherAddresses
-	 */
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "CharacterProfile")
-	@Cascade({CascadeType.SAVE_UPDATE})
-	public List<Address> getOtherAddresses() {
-		return otherAddresses;
-	}
-	/**
-	 * @param otherAddresses the otherAddresses to set
-	 */
-	public void setOtherAddresses(List<Address> otherAddresses) {
-		this.otherAddresses = otherAddresses;
-	}
+//	/**
+//	 * @return the otherAddresses
+//	 */
+//	@OneToMany(fetch = FetchType.LAZY, mappedBy = "CharacterProfile")
+//	@Cascade({CascadeType.SAVE_UPDATE})
+//	public List<Address> getOtherAddresses() {
+//		return otherAddresses;
+//	}
+//	/**
+//	 * @param otherAddresses the otherAddresses to set
+//	 */
+//	public void setOtherAddresses(List<Address> otherAddresses) {
+//		this.otherAddresses = otherAddresses;
+//	}
+	
+//	
+//	/**
+//	 * @return the otherAddresses
+//	 */
+//	public EmbeddedAddressTest getOtherAddresses() {
+//		return otherAddresses;
+//	}
+//	/**
+//	 * @param otherAddresses the otherAddresses to set
+//	 */
+//	public void setOtherAddresses(EmbeddedAddressTest otherAddresses) {
+//		this.otherAddresses = otherAddresses;
+//	}
+	
 	/**
 	 * @return the occupation
 	 */
@@ -348,5 +382,17 @@ public class CharacterProfileImpl implements CharacterProfile{
 	 */
 	public void setId(long id) {
 		this.id = id;
+	}
+	/**
+	 * @return the listofAddresses
+	 */
+	public Set<Address> getListofAddresses() {
+		return listofAddresses;
+	}
+	/**
+	 * @param listofAddresses the listofAddresses to set
+	 */
+	public void setListofAddresses(Set<Address> listofAddresses) {
+		this.listofAddresses = listofAddresses;
 	}
 }

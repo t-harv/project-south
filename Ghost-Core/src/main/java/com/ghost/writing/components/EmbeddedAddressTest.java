@@ -1,22 +1,26 @@
 package com.ghost.writing.components;
 
 import javax.persistence.Embeddable;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 //@Entity
-//@Table(name="Address")
+//@Table(name="EmbeddedAddress")
 @Embeddable
-public class Address {
+public class EmbeddedAddressTest {
 //	@GeneratedValue
 //	private long id;
 	private String streetAddress;
 	private String state;
 	private String city;
 	
-	public Address() {
-		streetAddress = "Unknown";
-		state  = "Unknown";
-		city  = "Unknown";
+	public EmbeddedAddressTest() {
+		streetAddress = "Embedded Unknown";
+		state  = "Embedded Unknown";
+		city  = "Embedded Unknown";
 	}
 	/**
 	 * @return the streetAddress
