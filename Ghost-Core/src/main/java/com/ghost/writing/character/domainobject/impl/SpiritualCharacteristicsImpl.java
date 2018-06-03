@@ -1,12 +1,12 @@
 package com.ghost.writing.character.domainobject.impl;
 
-import java.util.List;
+import java.util.Collection;
 
 import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
 
 public class SpiritualCharacteristicsImpl implements SpiritualCharacteristics {
 	private boolean believe;
-	private List<String> spiritualBeliefs;
+	private Collection<String> spiritualBeliefs;
 	private boolean spiritual;
 	private String role;  //if spiritual, what role does it play.
 	/**
@@ -24,14 +24,14 @@ public class SpiritualCharacteristicsImpl implements SpiritualCharacteristics {
 	/**
 	 * @return the spiritualBeliefs
 	 */
-	public List<String> getSpiritualBeliefs() {
+	public Collection<String> getSpiritualBeliefs() {
 		return spiritualBeliefs;
 	}
 	/**
-	 * @param spiritualBeliefs the spiritualBeliefs to set
+	 * @param jalaSpiritualBeliefs the spiritualBeliefs to set
 	 */
-	public void setSpiritualBeliefs(List<String> spiritualBeliefs) {
-		this.spiritualBeliefs = spiritualBeliefs;
+	public void setSpiritualBeliefs(Collection<String> jalaSpiritualBeliefs) {
+		this.spiritualBeliefs = jalaSpiritualBeliefs;
 	}
 	/**
 	 * @return the spiritual

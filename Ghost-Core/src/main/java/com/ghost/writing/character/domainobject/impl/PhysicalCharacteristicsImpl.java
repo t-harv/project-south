@@ -1,6 +1,7 @@
 package com.ghost.writing.character.domainobject.impl;
 
-import java.util.List;
+import java.util.Collection;
+import java.util.Collection;
 
 import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
 import com.ghost.writing.components.Nationality.Race;
@@ -15,15 +16,15 @@ public class PhysicalCharacteristicsImpl implements PhysicalCharacteristics{
 	private boolean contactLenses;
 	private String skinColor;
 	private String shapeOfFace;
-	private List<String> distinguishingFeatures;
+	private Collection<String> distinguishingFeatures;
 	private String dressCode;
 	private String mannerisms;
-	private List<String> habits;
-	private List<String> health;
-	private List<String> hobbies;
+	private Collection<String> habits;
+	private Collection<String> health;
+	private Collection<String> hobbies;
 	private String favoriteSaying;
 	private String speachPatterns;
-	private List<String> disabilities;
+	private Collection<String> disabilities;
 	private String style;
 	private String greatestFlaw;
 	private String bestQuality;
@@ -139,14 +140,14 @@ public class PhysicalCharacteristicsImpl implements PhysicalCharacteristics{
 	/**
 	 * @return the distinguishingFeatures
 	 */
-	public List<String> getDistinguishingFeatures() {
+	public Collection<String> getDistinguishingFeatures() {
 		return distinguishingFeatures;
 	}
 	/**
-	 * @param distinguishingFeatures the distinguishingFeatures to set
+	 * @param jalaDistinguishingFeatures the distinguishingFeatures to set
 	 */
-	public void setDistinguishingFeatures(List<String> distinguishingFeatures) {
-		this.distinguishingFeatures = distinguishingFeatures;
+	public void setDistinguishingFeatures(Collection<String> jalaDistinguishingFeatures) {
+		this.distinguishingFeatures = jalaDistinguishingFeatures;
 	}
 	/**
 	 * @return the dressCode
@@ -175,37 +176,37 @@ public class PhysicalCharacteristicsImpl implements PhysicalCharacteristics{
 	/**
 	 * @return the habits
 	 */
-	public List<String> getHabits() {
+	public Collection<String> getHabits() {
 		return habits;
 	}
 	/**
-	 * @param habits the habits to set
+	 * @param jalaHabits the habits to set
 	 */
-	public void setHabits(List<String> habits) {
-		this.habits = habits;
+	public void setHabits(Collection<String> jalaHabits) {
+		this.habits = jalaHabits;
 	}
 	/**
 	 * @return the health
 	 */
-	public List<String> getHealth() {
+	public Collection<String> getHealth() {
 		return health;
 	}
 	/**
 	 * @param health the health to set
 	 */
-	public void setHealth(List<String> health) {
+	public void setHealth(Collection<String> health) {
 		this.health = health;
 	}
 	/**
 	 * @return the hobbies
 	 */
-	public List<String> getHobbies() {
+	public Collection<String> getHobbies() {
 		return hobbies;
 	}
 	/**
 	 * @param hobbies the hobbies to set
 	 */
-	public void setHobbies(List<String> hobbies) {
+	public void setHobbies(Collection<String> hobbies) {
 		this.hobbies = hobbies;
 	}
 	/**
@@ -235,14 +236,14 @@ public class PhysicalCharacteristicsImpl implements PhysicalCharacteristics{
 	/**
 	 * @return the disabilities
 	 */
-	public List<String> getDisabilities() {
+	public Collection<String> getDisabilities() {
 		return disabilities;
 	}
 	/**
-	 * @param disabilities the disabilities to set
+	 * @param jalaDisabilities the disabilities to set
 	 */
-	public void setDisabilities(List<String> disabilities) {
-		this.disabilities = disabilities;
+	public void setDisabilities(Collection<String> jalaDisabilities) {
+		this.disabilities = jalaDisabilities;
 	}
 	/**
 	 * @return the style

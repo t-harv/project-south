@@ -403,6 +403,12 @@ public class CharacterProfileDTO implements CharacterProfile {
 	public void setCa(CharacterArch ca) {
 		this.ca = ca;
 	}
+
+	@Override
+	public void setBirthOrder(int x) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

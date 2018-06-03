@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.3.2" timestamp="2018-06-01T23:12:32.800">
+<pmd version="5.3.2" timestamp="2018-06-03T01:26:27.475">
 <file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dao/impl/CharacterProfileDaoImpl.java">
 <violation beginline="51" endline="51" begincolumn="57" endcolumn="58" rule="UnusedFormalParameter" ruleset="Unused Code" package="com.ghost.writing.character.dao.impl" class="CharacterProfileDaoImpl" method="CharacterProfileDaoImpl" variable="cp" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
 Avoid unused constructor parameters such as 'cp'.
@@ -8,6 +8,11 @@ Avoid unused constructor parameters such as 'cp'.
 <file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dao/impl/PhysicalCharacteristicsDaoImpl.java">
 <violation beginline="7" endline="7" begincolumn="71" endcolumn="72" rule="UnusedFormalParameter" ruleset="Unused Code" package="com.ghost.writing.character.dao.impl" class="PhysicalCharacteristicsDaoImpl" method="PhysicalCharacteristicsDaoImpl" variable="pc" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
 Avoid unused constructor parameters such as 'pc'.
+</violation>
+</file>
+<file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/CharacterProfile.java">
+<violation beginline="4" endline="4" begincolumn="16" endcolumn="41" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setBirthOrder" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
 </violation>
 </file>
 <file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/CharacterProfile_outdate.java">
@@ -114,18 +119,20 @@ Avoid modifiers which are implied by the context
 Avoid modifiers which are implied by the context
 </violation>
 </file>
-<file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/components/Address.java">
-<violation beginline="5" endline="5" begincolumn="1" endcolumn="40" rule="UnusedImports" ruleset="Import Statements" package="com.ghost.writing.components" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
-Avoid unused imports such as 'javax.persistence.GeneratedValue'
+<file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/impl/IntellectualCharacteristicsImpl.java">
+<violation beginline="4" endline="4" begincolumn="8" endcolumn="27" rule="DuplicateImports" ruleset="Import Statements" package="com.ghost.writing.character.domainobject.impl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'java.util.Collection'
 </violation>
-<violation beginline="6" endline="6" begincolumn="1" endcolumn="40" rule="UnusedImports" ruleset="Import Statements" package="com.ghost.writing.components" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
-Avoid unused imports such as 'javax.persistence.GenerationType'
-</violation>
-<violation beginline="7" endline="7" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Import Statements" package="com.ghost.writing.components" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
-Avoid unused imports such as 'javax.persistence.Id'
+</file>
+<file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/impl/PhysicalCharacteristicsImpl.java">
+<violation beginline="4" endline="4" begincolumn="8" endcolumn="27" rule="DuplicateImports" ruleset="Import Statements" package="com.ghost.writing.character.domainobject.impl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'java.util.Collection'
 </violation>
 </file>
 <file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/components/EmbeddedAddressTest.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="32" rule="UnusedImports" ruleset="Import Statements" package="com.ghost.writing.components" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.persistence.Entity'
+</violation>
 <violation beginline="5" endline="5" begincolumn="1" endcolumn="40" rule="UnusedImports" ruleset="Import Statements" package="com.ghost.writing.components" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
 Avoid unused imports such as 'javax.persistence.GeneratedValue'
 </violation>
@@ -134,6 +141,9 @@ Avoid unused imports such as 'javax.persistence.GenerationType'
 </violation>
 <violation beginline="7" endline="7" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Import Statements" package="com.ghost.writing.components" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
 Avoid unused imports such as 'javax.persistence.Id'
+</violation>
+<violation beginline="8" endline="8" begincolumn="1" endcolumn="31" rule="UnusedImports" ruleset="Import Statements" package="com.ghost.writing.components" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.persistence.Table'
 </violation>
 </file>
 </pmd>

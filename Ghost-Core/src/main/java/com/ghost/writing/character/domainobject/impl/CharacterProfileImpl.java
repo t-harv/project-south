@@ -1,30 +1,37 @@
 package com.ghost.writing.character.domainobject.impl;
 
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.Collection;
 
 import javax.persistence.CollectionTable;
+import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.CascadeType;
+import org.hibernate.annotations.CollectionId;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
 
 import com.ghost.writing.character.domainobject.CharacterProfile;
+import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
 import com.ghost.writing.components.Address;
-import com.ghost.writing.components.EmbeddedAddressTest;
 import com.ghost.writing.components.Nationality.Race;
-
+/**
+ * 
+ * @author toyan
+ * Character Profile!
+ * 
+ * 
+ * Notes
+ * I want to reduce the amount of collection tables being generated. A lot of these collections can be merged together.
+ *
+ */
 @Entity
 @Table(name="CharacterProfile")
 public class CharacterProfileImpl implements CharacterProfile{
@@ -41,37 +48,73 @@ public class CharacterProfileImpl implements CharacterProfile{
 	private String currentAddress;
 	
 	@ElementCollection
-//	@OneToMany(fetch = FetchType.LAZY, mappedBy = "controlRuleAttribPK.controlRuleId")
-//	@Cascade(CascadeType.ALL)
-	@CollectionTable(name="Address")
-	private Set<Address> listofAddresses = new HashSet<Address>();  //try to spring load this object instead of creating a new object here
+	@CollectionTable(name="Address" , joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")  //investigate what this means
+	@CollectionId(columns = { @Column(name="address_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<Address> listofAddresses;  //try to spring load this object instead of creating a new object here
 	
 	
-//	@ElementCollection
 	
-//	private List<Address> otherAddresses;
 //	@Embedded
 //	private EmbeddedAddressTest otherAddresses;
 	private String occupation;
 	private String income;
-//	private List<String> talents;
-//	private List<String> skills;
+	@ElementCollection
+	@CollectionTable(name="Talents", joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")
+	@CollectionId(columns = { @Column(name="talent_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<String> talents;
+	
+	@ElementCollection
+	@CollectionTable(name="Skills", joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")
+	@CollectionId(columns = { @Column(name="skill_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<String> skills;
 	private String salary;
 	private Integer birthOrder;
-//	private List<String> siblings;
+	@ElementCollection
+	@CollectionTable(name="Siblings", joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")
+	@CollectionId(columns = { @Column(name="sibling_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<String> siblings;
 	private String spouse;
-//	private List<String> children;
-//	private List<String> grandParents;
-//	private List<String> grandChildren;
-//	private List<String> significantOthers;
+	@ElementCollection
+	@CollectionTable(name="Children", joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")
+	@CollectionId(columns = { @Column(name="children_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<String> children;
+	@ElementCollection
+	@CollectionTable(name="GrandParents", joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")
+	@CollectionId(columns = { @Column(name="grand_parent_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<String> grandParents;
+	@ElementCollection
+	@CollectionTable(name="GrandChildren", joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")
+	@CollectionId(columns = { @Column(name="grand_children_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<String> grandChildren;
+	@ElementCollection
+	@CollectionTable(name="Significant_Other", joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")
+	@CollectionId(columns = { @Column(name="significant_other_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<String> significantOthers;
 	
 	
-//	private EmotionalCharacteristics ec;
+//	@ElementCollection
+//	@CollectionTable(name="Emotional_Characteristics" , joinColumns=@JoinColumn(name="character_profile_id"))
+//	@GenericGenerator(name="sequence-gen", strategy="sequence")  //investigate what this means
+//	@CollectionId(columns = { @Column(name="emotional_char_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	@Embedded
+	private EmotionalCharacteristics ec;
 //	private IntellectualCharacteristics ic;
 //	private PhysicalCharacteristics pc;
 //	private SpiritualCharacteristics sc;
 //	private CharacterArch ca;
 	
+	
+	public CharacterProfileImpl() {
+		System.out.println("Hi!");
+	}
 	/**
 	 * @return the name
 	 */
@@ -168,20 +211,6 @@ public class CharacterProfileImpl implements CharacterProfile{
 	public void setCurrentAddress(String currentAddress) {
 		this.currentAddress = currentAddress;
 	}
-//	/**
-//	 * @return the otherAddresses
-//	 */
-//	@OneToMany(fetch = FetchType.LAZY, mappedBy = "CharacterProfile")
-//	@Cascade({CascadeType.SAVE_UPDATE})
-//	public List<Address> getOtherAddresses() {
-//		return otherAddresses;
-//	}
-//	/**
-//	 * @param otherAddresses the otherAddresses to set
-//	 */
-//	public void setOtherAddresses(List<Address> otherAddresses) {
-//		this.otherAddresses = otherAddresses;
-//	}
 	
 //	
 //	/**
@@ -221,30 +250,30 @@ public class CharacterProfileImpl implements CharacterProfile{
 	public void setIncome(String income) {
 		this.income = income;
 	}
-//	/**
-//	 * @return the talents
-//	 */
-//	public List<String> getTalents() {
-//		return talents;
-//	}
-//	/**
-//	 * @param talents the talents to set
-//	 */
-//	public void setTalents(List<String> talents) {
-//		this.talents = talents;
-//	}
-//	/**
-//	 * @return the skills
-//	 */
-//	public List<String> getSkills() {
-//		return skills;
-//	}
-//	/**
-//	 * @param skills the skills to set
-//	 */
-//	public void setSkills(List<String> skills) {
-//		this.skills = skills;
-//	}
+	/**
+	 * @return the talents
+	 */
+	public Collection<String> getTalents() {
+		return talents;
+	}
+	/**
+	 * @param talents the talents to set
+	 */
+	public void setTalents(Collection<String> talents) {
+		this.talents = talents;
+	}
+	/**
+	 * @return the skills
+	 */
+	public Collection<String> getSkills() {
+		return skills;
+	}
+	/**
+	 * @param skills the skills to set
+	 */
+	public void setSkills(Collection<String> skills) {
+		this.skills = skills;
+	}
 	/**
 	 * @return the salary
 	 */
@@ -269,18 +298,18 @@ public class CharacterProfileImpl implements CharacterProfile{
 	public void setBirthOrder(Integer birthOrder) {
 		this.birthOrder = birthOrder;
 	}
-//	/**
-//	 * @return the siblings
-//	 */
-//	public List<String> getSiblings() {
-//		return siblings;
-//	}
-//	/**
-//	 * @param siblings the siblings to set
-//	 */
-//	public void setSiblings(List<String> siblings) {
-//		this.siblings = siblings;
-//	}
+	/**
+	 * @return the siblings
+	 */
+	public Collection<String> getSiblings() {
+		return siblings;
+	}
+	/**
+	 * @param siblings the siblings to set
+	 */
+	public void setSiblings(Collection<String> siblings) {
+		this.siblings = siblings;
+	}
 	/**
 	 * @return the spouse
 	 */
@@ -293,36 +322,36 @@ public class CharacterProfileImpl implements CharacterProfile{
 	public void setSpouse(String spouse) {
 		this.spouse = spouse;
 	}
-//	/**
-//	 * @return the children
-//	 */
-//	public List<String> getChildren() {
-//		return children;
-//	}
-//	/**
-//	 * @param children the children to set
-//	 */
-//	public void setChildren(List<String> children) {
-//		this.children = children;
-//	}
-//	/**
-//	 * @return the grandParents
-//	 */
-//	public List<String> getGrandParents() {
-//		return grandParents;
-//	}
+	/**
+	 * @return the children
+	 */
+	public Collection<String> getChildren() {
+		return children;
+	}
+	/**
+	 * @param children the children to set
+	 */
+	public void setChildren(Collection<String> children) {
+		this.children = children;
+	}
+	/**
+	 * @return the grandParents
+	 */
+	public Collection<String> getGrandParents() {
+		return grandParents;
+	}
 	/**
 	 * @return the ec
 	 */
-//	public EmotionalCharacteristics getEc() {
-//		return ec;
-//	}
-//	/**
-//	 * @param ec the ec to set
-//	 */
-//	public void setEc(EmotionalCharacteristics ec) {
-//		this.ec = ec;
-//	}
+	public EmotionalCharacteristics getEc() {
+		return ec;
+	}
+	/**
+	 * @param ec the ec to set
+	 */
+	public void setEc(EmotionalCharacteristics ec) {
+		this.ec = ec;
+	}
 //	/**
 //	 * @return the ic
 //	 */
@@ -386,13 +415,48 @@ public class CharacterProfileImpl implements CharacterProfile{
 	/**
 	 * @return the listofAddresses
 	 */
-	public Set<Address> getListofAddresses() {
+	public Collection<Address> getListofAddresses() {
 		return listofAddresses;
 	}
 	/**
 	 * @param listofAddresses the listofAddresses to set
 	 */
-	public void setListofAddresses(Set<Address> listofAddresses) {
+	public void setListofAddresses(Collection<Address> listofAddresses) {
 		this.listofAddresses = listofAddresses;
+	}
+	@Override
+	public void setBirthOrder(int x) {
+		// TODO Auto-generated method stub
+		
+	}
+	/**
+	 * @return the grandChildren
+	 */
+	public Collection<String> getGrandChildren() {
+		return grandChildren;
+	}
+	/**
+	 * @param grandChildren the grandChildren to set
+	 */
+	public void setGrandChildren(Collection<String> grandChildren) {
+		this.grandChildren = grandChildren;
+	}
+	/**
+	 * @return the significantOthers
+	 */
+	public Collection<String> getSignificantOthers() {
+		return significantOthers;
+	}
+	/**
+	 * @param significantOthers the significantOthers to set
+	 */
+	public void setSignificantOthers(Collection<String> significantOthers) {
+		this.significantOthers = significantOthers;
+	}
+	/**
+	 * @param grandParents the grandParents to set
+	 */
+	public void setGrandParents(Collection<String> grandParents) {
+		this.grandParents = grandParents;
 	}
 }

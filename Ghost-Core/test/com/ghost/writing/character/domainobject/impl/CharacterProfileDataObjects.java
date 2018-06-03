@@ -1,8 +1,7 @@
 package com.ghost.writing.character.domainobject.impl;
 
 import java.util.ArrayList;
-import java.util.List;
-
+import java.util.Collection;
 import com.ghost.writing.character.domainobject.CharacterArch;
 import com.ghost.writing.character.domainobject.CharacterProfile;
 import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
@@ -19,29 +18,48 @@ public class CharacterProfileDataObjects {
 //	private CharacterProfile babyL;
 
 	public CharacterProfileDataObjects() {
+
+	}
+
+	/**
+	 * @return the jala
+	 */
+	public CharacterProfile getJala() {
+		return jala;
+	}
+
+	/**
+	 * @param jala the jala to set
+	 */
+	public void setJala(CharacterProfile jala) {
+		this.jala = jala;
+	}
+	
+	public void initialize() {
 		// TODO Auto-generated constructor stub
 
-		jala = new CharacterProfileImpl();
+//		jala = new CharacterProfileImpl();
 
-		((CharacterProfileImpl)jala).setBirthOrder(3);
-		List<String> jalaChildren = new ArrayList<String>();
+//		((CharacterProfileImpl)jala).setBirthOrder(3);
+		jala.setBirthOrder(3);
+		Collection<String> jalaChildren = new ArrayList<String>();
 		jalaChildren.add("BabyL Haley");
-//		((CharacterProfileImpl)jala).setChildren(jalaChildren); //BabyL & Toyce
+		((CharacterProfileImpl)jala).setChildren(jalaChildren); //BabyL & Toyce
 		((CharacterProfileImpl)jala).setCurrentAddress("14306 Sunset View Dr, Bowie MD 20720");
 		((CharacterProfileImpl)jala).setFirstName("Jala");
-		List<String> jalaGrandChildren = new ArrayList<String>();
-//		((CharacterProfileImpl)jala).setGrandChildren(jalaGrandChildren);
-		List<String> jalaGrandParents = new ArrayList<String>();
+		Collection<String> jalaGrandChildren = new ArrayList<String>();
+		((CharacterProfileImpl)jala).setGrandChildren(jalaGrandChildren);
+		Collection<String> jalaGrandParents = new ArrayList<String>();
 		jalaGrandParents.add("Grandma JJ");
 		jalaGrandParents.add("Grandpa JJ");
-//		((CharacterProfileImpl)jala).setGrandParents(jalaGrandParents);
+		((CharacterProfileImpl)jala).setGrandParents(jalaGrandParents);
 		((CharacterProfileImpl)jala).setHomeTown("Japan Okinawa");
 		((CharacterProfileImpl)jala).setIncome("400k");
 		((CharacterProfileImpl)jala).setLastName("Haley");
 		((CharacterProfileImpl)jala).setName("Jala Minksy Haley");
 		((CharacterProfileImpl)jala).setNat(Race.BLACK);
 		((CharacterProfileImpl)jala).setOccupation("Software Developer");
-//		List<Address> jalaOtherAddresses = new ArrayList<Address>();
+//		Collection<Address> jalaOtherAddresses = new ArrayList<Address>();
 		EmbeddedAddressTest jalaOtherAddresses = new EmbeddedAddressTest();
 		
 		Address address1 = new Address();
@@ -57,22 +75,22 @@ public class CharacterProfileDataObjects {
 //		((CharacterProfileImpl)jala).setOtherAddresses(jalaOtherAddresses);
 //		((CharacterProfileImpl)jala).setOtherAddresses(jalaOtherAddresses);
 		((CharacterProfileImpl)jala).setSalary("400k");
-		List<String> jalaSiblings = new ArrayList<String>();
-		jalaSiblings.add("DeeDee Paterson");
-		jalaSiblings.add("Winston Curry");
+		Collection<String> jalaSiblings = new ArrayList<String>();
+		jalaSiblings.add("TeeGee Yolk");
+		jalaSiblings.add("Wins Gary");
 //		((CharacterProfileImpl)jala).setSiblings(jalaSiblings);
-		List<String> jalaSignificantOthers = new ArrayList<String>();
+		Collection<String> jalaSignificantOthers = new ArrayList<String>();
 		jalaSignificantOthers.add("Toyan Haley");
 //		((CharacterProfileImpl)jala).setSignificantOthers(jalaSignificantOthers);
-		List<String> jalaSkills = new ArrayList<String>();
+		Collection<String> jalaSkills = new ArrayList<String>();
 		jalaSkills.add("Mommy Skills");
 //		((CharacterProfileImpl)jala).setSkills(jalaSkills);
 		((CharacterProfileImpl)jala).setSocioeconomicLevelAsAChild("Middle Class");
 		((CharacterProfileImpl)jala).setSocioeconomicLevelAsAnAdult("Middle Class");
 		((CharacterProfileImpl)jala).setSpouse("Toyan Haley");
-		List<String> jalaTalents = new ArrayList<String>();
+		Collection<String> jalaTalents = new ArrayList<String>();
 		jalaTalents.add("Tap Dancing");
-//		((CharacterProfileImpl)jala).setTalents(jalaTalents);
+		((CharacterProfileImpl)jala).setTalents(jalaTalents);
 
 
 
@@ -83,7 +101,7 @@ public class CharacterProfileDataObjects {
 		((SpiritualCharacteristicsImpl)sc).setBelieve(true);
 		((SpiritualCharacteristicsImpl)sc).setRole("Everything");
 		((SpiritualCharacteristicsImpl)sc).setSpiritual(true);
-		List<String> jalaSpiritualBeliefs = new ArrayList<String>();
+		Collection<String> jalaSpiritualBeliefs = new ArrayList<String>();
 		jalaSpiritualBeliefs.add("Guidance");
 		((SpiritualCharacteristicsImpl)sc).setSpiritualBeliefs(jalaSpiritualBeliefs);
 //		((CharacterProfileImpl)jala).setSc(sc);
@@ -94,9 +112,9 @@ public class CharacterProfileDataObjects {
 		PhysicalCharacteristics pc = new PhysicalCharacteristicsImpl();
 		((PhysicalCharacteristicsImpl)pc).setBestQuality("Smart");
 		((PhysicalCharacteristicsImpl)pc).setContactLenses(false);
-		List<String> jalaDisabilities = new ArrayList<String>();
+		Collection<String> jalaDisabilities = new ArrayList<String>();
 		((PhysicalCharacteristicsImpl)pc).setDisabilities(jalaDisabilities);
-		List<String> jalaDistinguishingFeatures = new ArrayList<String>();
+		Collection<String> jalaDistinguishingFeatures = new ArrayList<String>();
 		jalaDistinguishingFeatures.add("Nose Mole");
 		jalaDistinguishingFeatures.add("Tounge Birthmark");
 		((PhysicalCharacteristicsImpl)pc).setDistinguishingFeatures(jalaDistinguishingFeatures);
@@ -105,16 +123,16 @@ public class CharacterProfileDataObjects {
 		((PhysicalCharacteristicsImpl)pc).setFavoriteSaying("Kick Rocks");
 		((PhysicalCharacteristicsImpl)pc).setGlasse(true);
 		((PhysicalCharacteristicsImpl)pc).setGreatestFlaw("Temper");
-		List<String> jalaHabits = new ArrayList<String>();
+		Collection<String> jalaHabits = new ArrayList<String>();
 		jalaHabits.add("Worry");
 		jalaHabits.add("Reading articles");
 		((PhysicalCharacteristicsImpl)pc).setHabits(jalaHabits);
 		((PhysicalCharacteristicsImpl)pc).setHairColor("Black");
-		List<String> jalaHealth = new ArrayList<String>();
+		Collection<String> jalaHealth = new ArrayList<String>();
 		jalaHealth.add("Healthy");
 		((PhysicalCharacteristicsImpl)pc).setHealth(jalaHealth);
 		((PhysicalCharacteristicsImpl)pc).setHight(6);
-		List<String> jalaHobbies = new ArrayList<String>();
+		Collection<String> jalaHobbies = new ArrayList<String>();
 		jalaHobbies.add("Reading");
 		((PhysicalCharacteristicsImpl)pc).setHobbies(jalaHobbies);
 		((PhysicalCharacteristicsImpl)pc).setMannerisms("Well");
@@ -130,25 +148,25 @@ public class CharacterProfileDataObjects {
 
 		//	Intellectual Characteristics
 		IntellectualCharacteristics ic = new IntellectualCharacteristicsImpl();
-		List<String> jalaEducation = new ArrayList<String>();
+		Collection<String> jalaEducation = new ArrayList<String>();
 		jalaEducation.add("Bacholers");
 		jalaEducation.add("Masters");
 		((IntellectualCharacteristicsImpl)ic).setEducation(jalaEducation);
 		((IntellectualCharacteristicsImpl)ic).setEmbarrassment("Comments towards self");
 		((IntellectualCharacteristicsImpl)ic).setEmotional(true);
 		((IntellectualCharacteristicsImpl)ic).setIntelligenceLevel("High");
-		List<String> jalaLearningExperiences = new ArrayList<String>();
+		Collection<String> jalaLearningExperiences = new ArrayList<String>();
 		jalaLearningExperiences.add("Life");
 		((IntellectualCharacteristicsImpl)ic).setLearningExperiences(jalaLearningExperiences);
-		List<String> jalaLongTermGoals = new ArrayList<String>();
+		Collection<String> jalaLongTermGoals = new ArrayList<String>();
 		jalaLongTermGoals.add("Christianity");
 		((IntellectualCharacteristicsImpl)ic).setLongTermGoals(jalaLongTermGoals);
-		List<String> jalaMentalIllnesses = new ArrayList<String>();
+		Collection<String> jalaMentalIllnesses = new ArrayList<String>();
 		((IntellectualCharacteristicsImpl)ic).setMentalIllnesses(jalaMentalIllnesses);
 		((IntellectualCharacteristicsImpl)ic).setPerception("Positive");
 		((IntellectualCharacteristicsImpl)ic).setSelfConfident(true);
 		((IntellectualCharacteristicsImpl)ic).setSelfViewPoint("High");
-		List<String> jalaShortTermGoals = new ArrayList<String>();
+		Collection<String> jalaShortTermGoals = new ArrayList<String>();
 		jalaShortTermGoals.add("Another Baby");
 		((IntellectualCharacteristicsImpl)ic).setShortTermGoals(jalaShortTermGoals);
 //		((CharacterProfileImpl)jala).setIc(ic);
@@ -162,21 +180,21 @@ public class CharacterProfileDataObjects {
 		((EmotionalCharacteristicsImpl)ec).setHappy("50/50");
 		((EmotionalCharacteristicsImpl)ec).setJudgmental(true);
 		((EmotionalCharacteristicsImpl)ec).setLossManagement("Unknown");
-		List<String> jalaMotivations = new ArrayList<String>();
+		Collection<String> jalaMotivations = new ArrayList<String>();
 		jalaMotivations.add("BabyL");
 		jalaMotivations.add("God");
 		((EmotionalCharacteristicsImpl)ec).setMotivations(jalaMotivations);
 		((EmotionalCharacteristicsImpl)ec).setPolite(true);
 		((EmotionalCharacteristicsImpl)ec).setRude(false);
 		((EmotionalCharacteristicsImpl)ec).setSadManagement("Not good");
-		List<String> jalaStrengths = new ArrayList<String>();
+		Collection<String> jalaStrengths = new ArrayList<String>();
 		jalaStrengths.add("Herself");
 		((EmotionalCharacteristicsImpl)ec).setStrengths(jalaStrengths);
 		((EmotionalCharacteristicsImpl)ec).setWantOutOfLife("Happiness");
-		List<String> jalaWeaknesses = new ArrayList<String>();
+		Collection<String> jalaWeaknesses = new ArrayList<String>();
 		jalaWeaknesses.add("Food!");
 		((EmotionalCharacteristicsImpl)ec).setWeaknesses(jalaWeaknesses);
-//		((CharacterProfileImpl)jala).setEc(ec);
+		((CharacterProfileImpl)jala).setEc(ec);
 
 
 		//character arch
@@ -184,23 +202,9 @@ public class CharacterProfileDataObjects {
 		((CharacterArchImpl)ca).setCharacterRole("Unknown");
 		((CharacterArchImpl)ca).setFinale("Unknown");
 		((CharacterArchImpl)ca).setFirstAppearance("2013, Washington DC");
-		List<CharacterProfile> jalaRelationships = new ArrayList<CharacterProfile>();
+		Collection<CharacterProfile> jalaRelationships = new ArrayList<CharacterProfile>();
 //		((CharacterArchImpl)ca).setRelationships(jalaRelationships);
 //		((CharacterProfileImpl)jala).setCa(ca);
-	}
-
-	/**
-	 * @return the jala
-	 */
-	public CharacterProfile getJala() {
-		return jala;
-	}
-
-	/**
-	 * @param jala the jala to set
-	 */
-	public void setJala(CharacterProfile jala) {
-		this.jala = jala;
 	}
 
 }

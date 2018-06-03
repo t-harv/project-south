@@ -1,14 +1,9 @@
 package com.ghost.writing.components;
 
 import javax.persistence.Embeddable;
-import javax.persistence.GeneratedValue;
 
-//@Entity
-//@Table(name="Address")
 @Embeddable
 public class Address {
-//	@GeneratedValue
-//	private long id;
 	private String streetAddress;
 	private String state;
 	private String city;

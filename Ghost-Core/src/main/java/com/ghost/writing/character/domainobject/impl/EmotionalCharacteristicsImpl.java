@@ -1,19 +1,42 @@
 package com.ghost.writing.character.domainobject.impl;
 
-import java.util.List;
+import java.util.Collection;
+
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embeddable;
+import javax.persistence.JoinColumn;
+
+import org.hibernate.annotations.CollectionId;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
 
 import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
 
+@Embeddable
 public class EmotionalCharacteristicsImpl implements EmotionalCharacteristics {
-	private List<String> strengths;
-	private List<String> weaknesses;
+	@ElementCollection
+	@CollectionTable(name="Strenghts", joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")
+	@CollectionId(columns = { @Column(name="strenght_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<String> strengths;
+	@ElementCollection
+	@CollectionTable(name="Weakness", joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")
+	@CollectionId(columns = { @Column(name="weak_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<String> weaknesses;
 	private String angerManagement;
 	private String sadManagement;
 	private String conflictManagement;
 	private String changeManagement;
 	private String lossManagement;
 	private String wantOutOfLife; //what does character want out of life
-	private List<String> motivations; // what motivate character
+	@ElementCollection
+	@CollectionTable(name="Motivations", joinColumns=@JoinColumn(name="character_profile_id"))
+	@GenericGenerator(name="sequence-gen", strategy="sequence")
+	@CollectionId(columns = { @Column(name="motivation_id") }, generator = "sequence-gen", type = @Type(type="long"))
+	private Collection<String> motivations; // what motivate character
 	private String frightens; 
 	private String happy; //what makes character happy
 	private Boolean judgmental; //is the character judgmental of others
@@ -23,25 +46,25 @@ public class EmotionalCharacteristicsImpl implements EmotionalCharacteristics {
 	/**
 	 * @return the strengths
 	 */
-	public List<String> getStrengths() {
+	public Collection<String> getStrengths() {
 		return strengths;
 	}
 	/**
 	 * @param strengths the strengths to set
 	 */
-	public void setStrengths(List<String> strengths) {
+	public void setStrengths(Collection<String> strengths) {
 		this.strengths = strengths;
 	}
 	/**
 	 * @return the weaknesses
 	 */
-	public List<String> getWeaknesses() {
+	public Collection<String> getWeaknesses() {
 		return weaknesses;
 	}
 	/**
 	 * @param weaknesses the weaknesses to set
 	 */
-	public void setWeaknesses(List<String> weaknesses) {
+	public void setWeaknesses(Collection<String> weaknesses) {
 		this.weaknesses = weaknesses;
 	}
 	/**
@@ -119,14 +142,14 @@ public class EmotionalCharacteristicsImpl implements EmotionalCharacteristics {
 	/**
 	 * @return the motivations
 	 */
-	public List<String> getMotivations() {
+	public Collection<String> getMotivations() {
 		return motivations;
 	}
 	/**
-	 * @param motivations the motivations to set
+	 * @param jalaMotivations the motivations to set
 	 */
-	public void setMotivations(List<String> motivations) {
-		this.motivations = motivations;
+	public void setMotivations(Collection<String> jalaMotivations) {
+		this.motivations = jalaMotivations;
 	}
 	/**
 	 * @return the frightens

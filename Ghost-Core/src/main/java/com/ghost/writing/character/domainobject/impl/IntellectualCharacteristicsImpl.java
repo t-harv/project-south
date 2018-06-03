@@ -1,16 +1,17 @@
 package com.ghost.writing.character.domainobject.impl;
 
-import java.util.List;
+import java.util.Collection;
+import java.util.Collection;
 
 import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
 
 public class IntellectualCharacteristicsImpl implements IntellectualCharacteristics {
-	private List<String> education;
+	private Collection<String> education;
 	private String intelligenceLevel;
-	private List<String> mentalIllnesses;
-	private List<String> learningExperiences;
-	private List<String> shortTermGoals;
-	private List<String> longTermGoals;
+	private Collection<String> mentalIllnesses;
+	private Collection<String> learningExperiences;
+	private Collection<String> shortTermGoals;
+	private Collection<String> longTermGoals;
 	private String selfViewPoint; //how does character see himself/herself
 	private String perception; //how does character belive he/she is perceived by others
 	private boolean selfConfident;
@@ -20,14 +21,14 @@ public class IntellectualCharacteristicsImpl implements IntellectualCharacterist
 	/**
 	 * @return the education
 	 */
-	public List<String> getEducation() {
+	public Collection<String> getEducation() {
 		return education;
 	}
 	/**
-	 * @param education the education to set
+	 * @param jalaEducation the education to set
 	 */
-	public void setEducation(List<String> education) {
-		this.education = education;
+	public void setEducation(Collection<String> jalaEducation) {
+		this.education = jalaEducation;
 	}
 	/**
 	 * @return the intelligenceLevel
@@ -44,49 +45,49 @@ public class IntellectualCharacteristicsImpl implements IntellectualCharacterist
 	/**
 	 * @return the mentalIllnesses
 	 */
-	public List<String> getMentalIllnesses() {
+	public Collection<String> getMentalIllnesses() {
 		return mentalIllnesses;
 	}
 	/**
 	 * @param mentalIllnesses the mentalIllnesses to set
 	 */
-	public void setMentalIllnesses(List<String> mentalIllnesses) {
+	public void setMentalIllnesses(Collection<String> mentalIllnesses) {
 		this.mentalIllnesses = mentalIllnesses;
 	}
 	/**
 	 * @return the learningExperiences
 	 */
-	public List<String> getLearningExperiences() {
+	public Collection<String> getLearningExperiences() {
 		return learningExperiences;
 	}
 	/**
 	 * @param learningExperiences the learningExperiences to set
 	 */
-	public void setLearningExperiences(List<String> learningExperiences) {
+	public void setLearningExperiences(Collection<String> learningExperiences) {
 		this.learningExperiences = learningExperiences;
 	}
 	/**
 	 * @return the shortTermGoals
 	 */
-	public List<String> getShortTermGoals() {
+	public Collection<String> getShortTermGoals() {
 		return shortTermGoals;
 	}
 	/**
 	 * @param shortTermGoals the shortTermGoals to set
 	 */
-	public void setShortTermGoals(List<String> shortTermGoals) {
+	public void setShortTermGoals(Collection<String> shortTermGoals) {
 		this.shortTermGoals = shortTermGoals;
 	}
 	/**
 	 * @return the longTermGoals
 	 */
-	public List<String> getLongTermGoals() {
+	public Collection<String> getLongTermGoals() {
 		return longTermGoals;
 	}
 	/**
 	 * @param longTermGoals the longTermGoals to set
 	 */
-	public void setLongTermGoals(List<String> longTermGoals) {
+	public void setLongTermGoals(Collection<String> longTermGoals) {
 		this.longTermGoals = longTermGoals;
 	}
 	/**

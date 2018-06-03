@@ -3,12 +3,15 @@ package com.ghost.writing.character.domainobject.impl;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class CharacterProfileImplHibernateTest {
 	
 	
 	public static void main(String[] args){
-		CharacterProfileDataObjects jala = new CharacterProfileDataObjects();
+		CharacterProfileDataObjects jala;
 
 		try{
 			
@@ -19,7 +22,15 @@ public class CharacterProfileImplHibernateTest {
 //			SessionFactory sessionFactory = configuration.configure().buildSessionFactory();
 			SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 			Session session = sessionFactory.openSession();
+			
+			ApplicationContext context = new ClassPathXmlApplicationContext(
+					"beans.xml");
+			BeanFactory factory = context;
+			
+			jala = (CharacterProfileDataObjects) factory.getBean("characterProfileDataObject");
+			
 			try{
+				jala.initialize();
 				session.beginTransaction();
 				session.save(jala.getJala());
 				session.getTransaction().commit();
