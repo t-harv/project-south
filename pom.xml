@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ghost</groupId>
 	<artifactId>GhostWriter</artifactId>
-	<version>9-SNAPSHOT</version>
+	<version>10-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Ghost Writer</name>
 	<description>Parent folder which holds the Ghost Writer app</description>

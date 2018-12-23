@@ -5,11 +5,11 @@
   <parent>
     <groupId>com.ghost</groupId>
     <artifactId>GhostWriter</artifactId>
-    <version>9-SNAPSHOT</version>
+    <version>10-SNAPSHOT</version>
   </parent>
   <groupId>com.ghost</groupId>
   <artifactId>Ghost-WS</artifactId>
-  <version>9-SNAPSHOT</version>
+  <version>10-SNAPSHOT</version>
   <name>Ghost-WS</name>
   <url>http://maven.apache.org</url>
   <properties>
