@@ -10,7 +10,7 @@ import ghost.domain.shape.ShapeDO;
 
 public class Driver {
 	public static void main(String[] args) {
-		System.out.println("Maven + Hibernate + Oracle");
+		System.out.println("Maven + Hibernate + Derby");
 		Session session = HibernateUtil.getSessionFactory().openSession();
 
 		session.beginTransaction();

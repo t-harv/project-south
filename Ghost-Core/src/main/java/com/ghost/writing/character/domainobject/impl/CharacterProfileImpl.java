@@ -104,8 +104,8 @@ public class CharacterProfileImpl implements CharacterProfile{
 //	@CollectionTable(name="Emotional_Characteristics" , joinColumns=@JoinColumn(name="character_profile_id"))
 //	@GenericGenerator(name="sequence-gen", strategy="sequence")  //investigate what this means
 //	@CollectionId(columns = { @Column(name="emotional_char_id") }, generator = "sequence-gen", type = @Type(type="long"))
-	@Embedded
-	private EmotionalCharacteristics ec;
+//	@Embedded
+//	private EmotionalCharacteristics ec;
 //	private IntellectualCharacteristics ic;
 //	private PhysicalCharacteristics pc;
 //	private SpiritualCharacteristics sc;
@@ -340,18 +340,18 @@ public class CharacterProfileImpl implements CharacterProfile{
 	public Collection<String> getGrandParents() {
 		return grandParents;
 	}
-	/**
-	 * @return the ec
-	 */
-	public EmotionalCharacteristics getEc() {
-		return ec;
-	}
-	/**
-	 * @param ec the ec to set
-	 */
-	public void setEc(EmotionalCharacteristics ec) {
-		this.ec = ec;
-	}
+//	/**
+//	 * @return the ec
+//	 */
+//	public EmotionalCharacteristics getEc() {
+//		return ec;
+//	}
+//	/**
+//	 * @param ec the ec to set
+//	 */
+//	public void setEc(EmotionalCharacteristics ec) {
+//		this.ec = ec;
+//	}
 //	/**
 //	 * @return the ic
 //	 */

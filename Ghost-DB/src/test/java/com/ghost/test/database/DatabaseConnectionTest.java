@@ -22,17 +22,17 @@ public class DatabaseConnectionTest {
 			String username = props.getProperty("username");
 			String password = props.getProperty("password");
 			String url = props.getProperty("url");
-			String oracleDriver = props.getProperty("oracleDriver");
+			String derbyDriver = props.getProperty("derbyDriver");
 			BasicDataSource ds = new BasicDataSource();
 			
 			ds.setUsername(username);
 			ds.setPassword(password);
 			ds.setUrl(url);
-			ds.setDriverClassName(oracleDriver);
+			ds.setDriverClassName(derbyDriver);
 			ds.setMaxWait(-1L);
 			ds.setTestWhileIdle(true);
 			ds.setTimeBetweenEvictionRunsMillis(60000);
-			ds.setValidationQuery("select * from dual");
+//			ds.setValidationQuery("value 1");  //Doesn't work for derby :(  i need to fix this or figure it out, not really important.
 			
 			Connection conn = ds.getConnection();
 			
