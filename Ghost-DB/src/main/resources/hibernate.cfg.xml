@@ -17,6 +17,7 @@
   <mapping resource="ProofReadDO.hbm.xml"></mapping>
   <mapping resource="ReviseDO.hbm.xml"></mapping>
   <mapping resource="ShapeDO.hbm.xml"></mapping>
+  <mapping resource="CharacterArchDO.hbm.xml"></mapping>
 </session-factory>
 </hibernate-configuration>
 

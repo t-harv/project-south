@@ -1,14 +1,9 @@
 package com.ghost.writing.character.domainobject.impl;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.MapsId;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
 import com.ghost.writing.character.domainobject.CharacterArch;
-import com.ghost.writing.character.domainobject.CharacterProfile;
 
 @Entity
 @Table(name="CharacterArch")
@@ -19,9 +14,9 @@ public class CharacterArchImpl implements CharacterArch {
 	
 	private String characterRole;
 	private String firstAppearance;
-    @OneToOne(fetch = FetchType.LAZY)
-    @MapsId
-	private CharacterProfile profile;
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @MapsId
+//	private CharacterProfile profile;
 	
 	/*
 	 * I do not know how to properly map this collection in hibernate just yet.  I'm going to comment
@@ -29,6 +24,19 @@ public class CharacterArchImpl implements CharacterArch {
 	 */
 //	private List<CharacterProfile> relationships;
 	private String finale;  //how character is different at the end of the novel from when the novel began
+    
+    //default constructor
+    public CharacterArchImpl() {
+    	characterRole = "unknown";
+    	firstAppearance = "unknown";
+    	finale = "unknown";
+    }
+    
+    public CharacterArchImpl(String characterRole, String firstAppearance, String finale) {
+    	this.characterRole = characterRole;
+    	this.firstAppearance = firstAppearance;
+    	this.finale = finale;
+    }
 	/**
 	 * @return the characterRole
 	 */
@@ -89,17 +97,17 @@ public class CharacterArchImpl implements CharacterArch {
 	public void setId(long id) {
 		this.id = id;
 	}
-	/**
-	 * @return the profile
-	 */
-	public CharacterProfile getProfile() {
-		return profile;
-	}
-	/**
-	 * @param profile the profile to set
-	 */
-	public void setProfile(CharacterProfile profile) {
-		this.profile = profile;
-	}
+//	/**
+//	 * @return the profile
+//	 */
+//	public CharacterProfile getProfile() {
+//		return profile;
+//	}
+//	/**
+//	 * @param profile the profile to set
+//	 */
+//	public void setProfile(CharacterProfile profile) {
+//		this.profile = profile;
+//	}
 
 }

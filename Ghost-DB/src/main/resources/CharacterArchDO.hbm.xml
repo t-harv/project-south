@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.ghost.writing.character.domainobject" table="CHARACTER_ARCH">
+		<id name="draftId" type="int">
+			<column name="CHARACTERARCHID" precision="5" scale="0" />
+			<generator class="increment" />
+		</id>
+		<property name="characterRole" type="string">
+			<column name="ROLE" length="4000"></column>
+		</property>
+		<property name="firstAppearance" type="string">
+			<column name="FIRSTAPPEARANCE" length="4000"></column>
+		</property>
+		<property name="finale" type="string">
+			<column name="FINALE" length="4000"></column>
+		</property>
+	</class>
+</hibernate-mapping>
