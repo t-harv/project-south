@@ -10,7 +10,7 @@ import com.ghost.writing.character.domainobject.CharacterArch;
 public class CharacterArchImpl implements CharacterArch {
 	
 	@Id
-	private long id;
+	private long characterArchID;
 	
 	private String characterRole;
 	private String firstAppearance;
@@ -85,18 +85,15 @@ public class CharacterArchImpl implements CharacterArch {
 	public void setFinale(String finale) {
 		this.finale = finale;
 	}
-	/**
-	 * @return the id
-	 */
-	public long getId() {
-		return id;
+
+	public long getCharacterArchID() {
+		return characterArchID;
 	}
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(long id) {
-		this.id = id;
+
+	public void setCharacterArchID(long characterArchID) {
+		this.characterArchID = characterArchID;
 	}
+
 //	/**
 //	 * @return the profile
 //	 */
