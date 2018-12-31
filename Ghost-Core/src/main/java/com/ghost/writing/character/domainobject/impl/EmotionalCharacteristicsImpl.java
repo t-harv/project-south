@@ -1,72 +1,62 @@
 package com.ghost.writing.character.domainobject.impl;
 
-import java.util.Collection;
-
-import javax.persistence.CollectionTable;
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
 import javax.persistence.Embeddable;
-import javax.persistence.JoinColumn;
-
-import org.hibernate.annotations.CollectionId;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
 
 import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
 
 @Embeddable
 public class EmotionalCharacteristicsImpl implements EmotionalCharacteristics {
-	@ElementCollection
-	@CollectionTable(name="Strenghts", joinColumns=@JoinColumn(name="character_profile_id"))
-	@GenericGenerator(name="sequence-gen", strategy="sequence")
-	@CollectionId(columns = { @Column(name="strenght_id") }, generator = "sequence-gen", type = @Type(type="long"))
-	private Collection<String> strengths;
-	@ElementCollection
-	@CollectionTable(name="Weakness", joinColumns=@JoinColumn(name="character_profile_id"))
-	@GenericGenerator(name="sequence-gen", strategy="sequence")
-	@CollectionId(columns = { @Column(name="weak_id") }, generator = "sequence-gen", type = @Type(type="long"))
-	private Collection<String> weaknesses;
+//	@ElementCollection
+//	@CollectionTable(name="Strenghts", joinColumns=@JoinColumn(name="character_profile_id"))
+//	@GenericGenerator(name="sequence-gen", strategy="sequence")
+//	@CollectionId(columns = { @Column(name="strenght_id") }, generator = "sequence-gen", type = @Type(type="long"))
+//	private Collection<String> strengths;
+//	@ElementCollection
+//	@CollectionTable(name="Weakness", joinColumns=@JoinColumn(name="character_profile_id"))
+//	@GenericGenerator(name="sequence-gen", strategy="sequence")
+//	@CollectionId(columns = { @Column(name="weak_id") }, generator = "sequence-gen", type = @Type(type="long"))
+//	private Collection<String> weaknesses;
 	private String angerManagement;
 	private String sadManagement;
 	private String conflictManagement;
 	private String changeManagement;
 	private String lossManagement;
 	private String wantOutOfLife; //what does character want out of life
-	@ElementCollection
-	@CollectionTable(name="Motivations", joinColumns=@JoinColumn(name="character_profile_id"))
-	@GenericGenerator(name="sequence-gen", strategy="sequence")
-	@CollectionId(columns = { @Column(name="motivation_id") }, generator = "sequence-gen", type = @Type(type="long"))
-	private Collection<String> motivations; // what motivate character
+//	@ElementCollection
+//	@CollectionTable(name="Motivations", joinColumns=@JoinColumn(name="character_profile_id"))
+//	@GenericGenerator(name="sequence-gen", strategy="sequence")
+//	@CollectionId(columns = { @Column(name="motivation_id") }, generator = "sequence-gen", type = @Type(type="long"))
+//	private Collection<String> motivations; // what motivate character
 	private String frightens; 
 	private String happy; //what makes character happy
 	private Boolean judgmental; //is the character judgmental of others
 	private boolean polite;
 	private boolean rude;
 	
-	/**
-	 * @return the strengths
-	 */
-	public Collection<String> getStrengths() {
-		return strengths;
-	}
-	/**
-	 * @param strengths the strengths to set
-	 */
-	public void setStrengths(Collection<String> strengths) {
-		this.strengths = strengths;
-	}
-	/**
-	 * @return the weaknesses
-	 */
-	public Collection<String> getWeaknesses() {
-		return weaknesses;
-	}
-	/**
-	 * @param weaknesses the weaknesses to set
-	 */
-	public void setWeaknesses(Collection<String> weaknesses) {
-		this.weaknesses = weaknesses;
-	}
+//	/**
+//	 * @return the strengths
+//	 */
+//	public Collection<String> getStrengths() {
+//		return strengths;
+//	}
+//	/**
+//	 * @param strengths the strengths to set
+//	 */
+//	public void setStrengths(Collection<String> strengths) {
+//		this.strengths = strengths;
+//	}
+//	/**
+//	 * @return the weaknesses
+//	 */
+//	public Collection<String> getWeaknesses() {
+//		return weaknesses;
+//	}
+//	/**
+//	 * @param weaknesses the weaknesses to set
+//	 */
+//	public void setWeaknesses(Collection<String> weaknesses) {
+//		this.weaknesses = weaknesses;
+//	}
 	/**
 	 * @return the angerManagement
 	 */
@@ -139,18 +129,18 @@ public class EmotionalCharacteristicsImpl implements EmotionalCharacteristics {
 	public void setWantOutOfLife(String wantOutOfLife) {
 		this.wantOutOfLife = wantOutOfLife;
 	}
-	/**
-	 * @return the motivations
-	 */
-	public Collection<String> getMotivations() {
-		return motivations;
-	}
-	/**
-	 * @param jalaMotivations the motivations to set
-	 */
-	public void setMotivations(Collection<String> jalaMotivations) {
-		this.motivations = jalaMotivations;
-	}
+//	/**
+//	 * @return the motivations
+//	 */
+//	public Collection<String> getMotivations() {
+//		return motivations;
+//	}
+//	/**
+//	 * @param jalaMotivations the motivations to set
+//	 */
+//	public void setMotivations(Collection<String> jalaMotivations) {
+//		this.motivations = jalaMotivations;
+//	}
 	/**
 	 * @return the frightens
 	 */

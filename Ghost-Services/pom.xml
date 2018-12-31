@@ -12,6 +12,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<artifactId>Ghost-Services</artifactId>
+	<packaging>war</packaging>
+	<name>ghost</name>
 
 	<dependencyManagement>
 		<dependencies>

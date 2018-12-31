@@ -14,8 +14,7 @@
 		<module>Ghost-Core</module>
 		<module>Ghost-Services</module>
 		<module>Ghost-DB</module>
-
-		<module>Ghost-WS</module>
+		<!-- <module>Ghost-WS</module> -->
 	</modules>
 
 	<properties>
