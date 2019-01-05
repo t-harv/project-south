@@ -7,6 +7,6 @@ package com.ghost.writing.character.domainobject;
  * @author root
  *
  */
-public interface CharacterProfile {
+public interface ICharacterProfile {
 
 }

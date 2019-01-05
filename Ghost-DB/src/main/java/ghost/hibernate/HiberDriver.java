@@ -2,7 +2,7 @@ package ghost.hibernate;
 
 import java.util.List;
 
-import com.ghost.writing.character.domainobject.CharacterProfile;
+import com.ghost.writing.character.domainobject.ICharacterProfile;
 
 public class HiberDriver {
 	private String mapping;
@@ -19,24 +19,24 @@ public class HiberDriver {
 		this.mapping = mapping;
 	}
 	
-	public void remove(CharacterProfile object) {
+	public void remove(ICharacterProfile object) {
 		
 	}
 	
-	public void add(CharacterProfile object) {
+	public void add(ICharacterProfile object) {
 		
 	}
 	
-	public void update(CharacterProfile object) {
+	public void update(ICharacterProfile object) {
 		
 	}
 	
-	public CharacterProfile get(String name) {
+	public ICharacterProfile get(String name) {
 		return null;
 		
 	}
 	
-	public List<CharacterProfile> getAll() {
+	public List<ICharacterProfile> getAll() {
 		return null;
 		
 	}

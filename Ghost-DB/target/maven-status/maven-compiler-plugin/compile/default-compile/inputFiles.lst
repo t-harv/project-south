@@ -2,6 +2,7 @@
 /home/toyan/Development/git/project-south/Ghost-DB/src/main/java/ghost/domain/shape/ShapeDO.java
 /home/toyan/Development/git/project-south/Ghost-DB/src/main/java/ghost/domain/draft/DraftDO.java
 /home/toyan/Development/git/project-south/Ghost-DB/src/main/java/Driver.java
+/home/toyan/Development/git/project-south/Ghost-DB/src/main/java/ghost/hibernate/HiberDriver.java
 /home/toyan/Development/git/project-south/Ghost-DB/src/main/java/ghost/domain/edit/EditDO.java
 /home/toyan/Development/git/project-south/Ghost-DB/src/main/java/ghost/domain/proofread/ProofReadDO.java
 /home/toyan/Development/git/project-south/Ghost-DB/src/main/java/ghost/domain/revise/ReviseDO.java

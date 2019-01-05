@@ -2,7 +2,7 @@ package com.ghost.writing.character.dto;
 
 import java.util.Collection;
 
-import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
+import com.ghost.writing.character.domainobject.IPhysicalCharacteristics;
 
 
 /**
@@ -12,7 +12,7 @@ import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
  * Purpose of this class is to map out characters physical characteristics.
  * 
  */
-public class PhysicalCharacteristicsDto implements PhysicalCharacteristics {
+public class PhysicalCharacteristicsDto implements IPhysicalCharacteristics {
 	private String height;
 	private String weight;
 	private String race;

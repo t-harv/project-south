@@ -1,2 +1,4 @@
 ghost/resources/CharacterResource.class
+ghost/resources/CharacterArchResource.class
 ghost/service/CharacterService.class
+ghost/service/CharacterArchService.class

@@ -2,8 +2,8 @@ package ghost.service;
 
 import java.util.List;
 
-import com.ghost.writing.character.domainobject.CharacterArch;
-import com.ghost.writing.character.domainobject.CharacterProfile;
+import com.ghost.writing.character.domainobject.ICharacterArch;
+import com.ghost.writing.character.domainobject.ICharacterProfile;
 
 import ghost.hibernate.HiberDriver;
 
@@ -12,25 +12,25 @@ public class CharacterArchService {
 
 	HiberDriver db = new HiberDriver("characterArch"); 
 
-	public List<CharacterProfile> getAllCharacterArchs() {
+	public List<ICharacterProfile> getAllCharacterArchs() {
 		return db.getAll();
 	}
 
-	public CharacterProfile getCharacterArch(String characterArchName) {
+	public ICharacterProfile getCharacterArch(String characterArchName) {
 		return db.get(characterArchName);
 	}
 
-	public CharacterProfile addProfile(CharacterProfile characterArch) {
+	public ICharacterProfile addProfile(ICharacterProfile characterArch) {
 		db.add(characterArch);
 		return characterArch;
 	}
 
-	public CharacterProfile updateProfile(CharacterArch characterArch) {
+	public ICharacterProfile updateProfile(ICharacterArch characterArch) {
 		db.update(characterArch);
 		return characterArch;
 	}
 
-	public void removeProfile(CharacterArch characterArch) {
+	public void removeProfile(ICharacterArch characterArch) {
 		db.remove(characterArch);
 	}
 

@@ -6,7 +6,6 @@ import java.util.Collection;
 import javax.persistence.CollectionTable;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
-import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,8 +17,7 @@ import org.hibernate.annotations.CollectionId;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
-import com.ghost.writing.character.domainobject.CharacterProfile;
-import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
+import com.ghost.writing.character.domainobject.ICharacterProfile;
 import com.ghost.writing.components.Address;
 import com.ghost.writing.components.Nationality.Race;
 /**
@@ -34,7 +32,7 @@ import com.ghost.writing.components.Nationality.Race;
  */
 @Entity
 @Table(name="CharacterProfile")
-public class CharacterProfileImpl implements CharacterProfile{
+public class CharacterProfileImpl implements ICharacterProfile{
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
@@ -106,7 +104,7 @@ public class CharacterProfileImpl implements CharacterProfile{
 //	@CollectionId(columns = { @Column(name="emotional_char_id") }, generator = "sequence-gen", type = @Type(type="long"))
 //	@Embedded
 //	private EmotionalCharacteristics ec;
-//	private IntellectualCharacteristics ic;
+//	private IIntellectualCharacteristics ic;
 //	private PhysicalCharacteristics pc;
 //	private SpiritualCharacteristics sc;
 //	private CharacterArch ca;
@@ -355,13 +353,13 @@ public class CharacterProfileImpl implements CharacterProfile{
 //	/**
 //	 * @return the ic
 //	 */
-//	public IntellectualCharacteristics getIc() {
+//	public IIntellectualCharacteristics getIc() {
 //		return ic;
 //	}
 //	/**
 //	 * @param ic the ic to set
 //	 */
-//	public void setIc(IntellectualCharacteristics ic) {
+//	public void setIc(IIntellectualCharacteristics ic) {
 //		this.ic = ic;
 //	}
 //	/**
@@ -424,7 +422,7 @@ public class CharacterProfileImpl implements CharacterProfile{
 	public void setListofAddresses(Collection<Address> listofAddresses) {
 		this.listofAddresses = listofAddresses;
 	}
-	@Override
+	
 	public void setBirthOrder(int x) {
 		// TODO Auto-generated method stub
 		

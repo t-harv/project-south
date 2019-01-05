@@ -2,9 +2,9 @@ package com.ghost.writing.character.domainobject.impl;
 
 import java.util.Collection;
 
-import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
+import com.ghost.writing.character.domainobject.ISpiritualCharacteristics;
 
-public class SpiritualCharacteristicsImpl implements SpiritualCharacteristics {
+public class SpiritualCharacteristicsImpl implements ISpiritualCharacteristics {
 	private boolean believe;
 	private Collection<String> spiritualBeliefs;
 	private boolean spiritual;

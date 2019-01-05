@@ -2,19 +2,20 @@ package com.ghost.writing.character.domainobject.impl;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import com.ghost.writing.character.domainobject.CharacterArch;
-import com.ghost.writing.character.domainobject.CharacterProfile;
-import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
-import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
-import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
-import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
+
+import com.ghost.writing.character.domainobject.ICharacterArch;
+import com.ghost.writing.character.domainobject.ICharacterProfile;
+import com.ghost.writing.character.domainobject.IEmotionalCharacteristics;
+import com.ghost.writing.character.domainobject.IIntellectualCharacteristics;
+import com.ghost.writing.character.domainobject.IPhysicalCharacteristics;
+import com.ghost.writing.character.domainobject.ISpiritualCharacteristics;
 import com.ghost.writing.components.Address;
 import com.ghost.writing.components.EmbeddedAddressTest;
 import com.ghost.writing.components.Nationality.Race;
 
 public class CharacterProfileDataObjects {
 	
-	private CharacterProfile jala;
+	private ICharacterProfile jala;
 //	private CharacterProfile babyL;
 
 	public CharacterProfileDataObjects() {
@@ -24,14 +25,14 @@ public class CharacterProfileDataObjects {
 	/**
 	 * @return the jala
 	 */
-	public CharacterProfile getJala() {
+	public ICharacterProfile getJala() {
 		return jala;
 	}
 
 	/**
 	 * @param jala the jala to set
 	 */
-	public void setJala(CharacterProfile jala) {
+	public void setJala(ICharacterProfile jala) {
 		this.jala = jala;
 	}
 	
@@ -41,7 +42,7 @@ public class CharacterProfileDataObjects {
 //		jala = new CharacterProfileImpl();
 
 //		((CharacterProfileImpl)jala).setBirthOrder(3);
-		jala.setBirthOrder(3);
+		((CharacterProfileImpl) jala).setBirthOrder(3);
 		Collection<String> jalaChildren = new ArrayList<String>();
 		jalaChildren.add("BabyL Haley");
 		((CharacterProfileImpl)jala).setChildren(jalaChildren); //BabyL & Toyce
@@ -97,7 +98,7 @@ public class CharacterProfileDataObjects {
 
 
 		//	Spiritual Characteristics
-		SpiritualCharacteristics sc = new SpiritualCharacteristicsImpl();
+		ISpiritualCharacteristics sc = new SpiritualCharacteristicsImpl();
 		((SpiritualCharacteristicsImpl)sc).setBelieve(true);
 		((SpiritualCharacteristicsImpl)sc).setRole("Everything");
 		((SpiritualCharacteristicsImpl)sc).setSpiritual(true);
@@ -109,7 +110,7 @@ public class CharacterProfileDataObjects {
 
 
 		//	Physical Characteristics
-		PhysicalCharacteristics pc = new PhysicalCharacteristicsImpl();
+		IPhysicalCharacteristics pc = new PhysicalCharacteristicsImpl();
 		((PhysicalCharacteristicsImpl)pc).setBestQuality("Smart");
 		((PhysicalCharacteristicsImpl)pc).setContactLenses(false);
 		Collection<String> jalaDisabilities = new ArrayList<String>();
@@ -147,7 +148,7 @@ public class CharacterProfileDataObjects {
 
 
 		//	Intellectual Characteristics
-		IntellectualCharacteristics ic = new IntellectualCharacteristicsImpl();
+		IIntellectualCharacteristics ic = new IntellectualCharacteristicsImpl();
 		Collection<String> jalaEducation = new ArrayList<String>();
 		jalaEducation.add("Bacholers");
 		jalaEducation.add("Masters");
@@ -172,7 +173,7 @@ public class CharacterProfileDataObjects {
 //		((CharacterProfileImpl)jala).setIc(ic);
 
 		//Emotional Characteristics
-		EmotionalCharacteristics ec = new EmotionalCharacteristicsImpl();
+		IEmotionalCharacteristics ec = new EmotionalCharacteristicsImpl();
 		((EmotionalCharacteristicsImpl)ec).setAngerManagement("Needs it");
 		((EmotionalCharacteristicsImpl)ec).setChangeManagement("50/50 resistant to change");
 		((EmotionalCharacteristicsImpl)ec).setConflictManagement("None!  Very angry");
@@ -198,11 +199,11 @@ public class CharacterProfileDataObjects {
 
 
 		//character arch
-		CharacterArch ca = new CharacterArchImpl();
+		ICharacterArch ca = new CharacterArchImpl();
 		((CharacterArchImpl)ca).setCharacterRole("Unknown");
 		((CharacterArchImpl)ca).setFinale("Unknown");
 		((CharacterArchImpl)ca).setFirstAppearance("2013, Washington DC");
-		Collection<CharacterProfile> jalaRelationships = new ArrayList<CharacterProfile>();
+		Collection<ICharacterProfile> jalaRelationships = new ArrayList<ICharacterProfile>();
 //		((CharacterArchImpl)ca).setRelationships(jalaRelationships);
 //		((CharacterProfileImpl)jala).setCa(ca);
 	}

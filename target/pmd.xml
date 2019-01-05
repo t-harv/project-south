@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.3.2" timestamp="2019-01-01T17:14:21.898">
+<pmd version="5.3.2" timestamp="2019-01-05T00:35:33.784">
 <file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dao/impl/CharacterProfileDaoImpl.java">
-<violation beginline="51" endline="51" begincolumn="57" endcolumn="58" rule="UnusedFormalParameter" ruleset="Unused Code" package="com.ghost.writing.character.dao.impl" class="CharacterProfileDaoImpl" method="CharacterProfileDaoImpl" variable="cp" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+<violation beginline="51" endline="51" begincolumn="58" endcolumn="59" rule="UnusedFormalParameter" ruleset="Unused Code" package="com.ghost.writing.character.dao.impl" class="CharacterProfileDaoImpl" method="CharacterProfileDaoImpl" variable="cp" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
 Avoid unused constructor parameters such as 'cp'.
 </violation>
 </file>
 <file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/dao/impl/PhysicalCharacteristicsDaoImpl.java">
-<violation beginline="7" endline="7" begincolumn="71" endcolumn="72" rule="UnusedFormalParameter" ruleset="Unused Code" package="com.ghost.writing.character.dao.impl" class="PhysicalCharacteristicsDaoImpl" method="PhysicalCharacteristicsDaoImpl" variable="pc" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+<violation beginline="7" endline="7" begincolumn="72" endcolumn="73" rule="UnusedFormalParameter" ruleset="Unused Code" package="com.ghost.writing.character.dao.impl" class="PhysicalCharacteristicsDaoImpl" method="PhysicalCharacteristicsDaoImpl" variable="pc" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
 Avoid unused constructor parameters such as 'pc'.
-</violation>
-</file>
-<file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/CharacterProfile.java">
-<violation beginline="4" endline="4" begincolumn="16" endcolumn="41" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile" method="setBirthOrder" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
-Avoid modifiers which are implied by the context
 </violation>
 </file>
 <file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/CharacterProfile_outdate.java">
@@ -117,24 +112,6 @@ Avoid modifiers which are implied by the context
 </violation>
 <violation beginline="154" endline="154" begincolumn="16" endcolumn="77" rule="UnusedModifier" ruleset="Unused Code" package="com.ghost.writing.character.domainobject" class="CharacterProfile_outdate" method="setSignificantOther" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
 Avoid modifiers which are implied by the context
-</violation>
-</file>
-<file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/impl/CharacterProfileImpl.java">
-<violation beginline="9" endline="9" begincolumn="1" endcolumn="34" rule="UnusedImports" ruleset="Import Statements" package="com.ghost.writing.character.domainobject.impl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
-Avoid unused imports such as 'javax.persistence.Embedded'
-</violation>
-<violation beginline="22" endline="22" begincolumn="1" endcolumn="73" rule="UnusedImports" ruleset="Import Statements" package="com.ghost.writing.character.domainobject.impl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
-Avoid unused imports such as 'com.ghost.writing.character.domainobject.EmotionalCharacteristics'
-</violation>
-</file>
-<file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/impl/IntellectualCharacteristicsImpl.java">
-<violation beginline="4" endline="4" begincolumn="8" endcolumn="27" rule="DuplicateImports" ruleset="Import Statements" package="com.ghost.writing.character.domainobject.impl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#DuplicateImports" priority="4">
-Avoid duplicate imports such as 'java.util.Collection'
-</violation>
-</file>
-<file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/character/domainobject/impl/PhysicalCharacteristicsImpl.java">
-<violation beginline="4" endline="4" begincolumn="8" endcolumn="27" rule="DuplicateImports" ruleset="Import Statements" package="com.ghost.writing.character.domainobject.impl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#DuplicateImports" priority="4">
-Avoid duplicate imports such as 'java.util.Collection'
 </violation>
 </file>
 <file name="/home/toyan/Development/git/project-south/Ghost-Core/src/main/java/com/ghost/writing/components/EmbeddedAddressTest.java">

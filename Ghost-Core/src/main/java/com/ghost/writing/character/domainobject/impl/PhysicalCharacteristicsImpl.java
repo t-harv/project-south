@@ -1,12 +1,11 @@
 package com.ghost.writing.character.domainobject.impl;
 
 import java.util.Collection;
-import java.util.Collection;
 
-import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
+import com.ghost.writing.character.domainobject.IPhysicalCharacteristics;
 import com.ghost.writing.components.Nationality.Race;
 
-public class PhysicalCharacteristicsImpl implements PhysicalCharacteristics{
+public class PhysicalCharacteristicsImpl implements IPhysicalCharacteristics{
 	private float hight;
 	private float weight;
 	private Race race;

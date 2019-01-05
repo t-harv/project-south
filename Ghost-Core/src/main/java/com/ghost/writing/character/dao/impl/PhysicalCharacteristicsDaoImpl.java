@@ -1,10 +1,10 @@
 package com.ghost.writing.character.dao.impl;
 
-import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
+import com.ghost.writing.character.domainobject.IPhysicalCharacteristics;
 
-public class PhysicalCharacteristicsDaoImpl implements PhysicalCharacteristics {
+public class PhysicalCharacteristicsDaoImpl implements IPhysicalCharacteristics {
 	
-	public PhysicalCharacteristicsDaoImpl(PhysicalCharacteristics pc) {
+	public PhysicalCharacteristicsDaoImpl(IPhysicalCharacteristics pc) {
 		// TODO Auto-generated constructor stub
 	}
 

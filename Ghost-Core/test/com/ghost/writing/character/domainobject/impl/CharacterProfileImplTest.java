@@ -10,15 +10,16 @@ import org.junit.Test;
 import com.ghost.writing.character.domainobject.CharacterArch;
 import com.ghost.writing.character.domainobject.CharacterProfile;
 import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
-import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
+import com.ghost.writing.character.domainobject.ICharacterProfile;
+import com.ghost.writing.character.domainobject.IIntellectualCharacteristics;
 import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
 import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
 import com.ghost.writing.components.EmbeddedAddressTest;
 import com.ghost.writing.components.Nationality.Race;
 
 public class CharacterProfileImplTest {
-	private CharacterProfile jala;
-	private CharacterProfile babyL;
+	private ICharacterProfile jala;
+	private ICharacterProfile babyL;
 	
 
 	@Before
@@ -118,7 +119,7 @@ public class CharacterProfileImplTest {
 		
 		
 //		Intellectual Characteristics
-		IntellectualCharacteristics ic = new IntellectualCharacteristicsImpl();
+		IIntellectualCharacteristics ic = new IntellectualCharacteristicsImpl();
 		List<String> jalaEducation = new ArrayList<String>();
 		jalaEducation.add("Bacholers");
 		jalaEducation.add("Masters");

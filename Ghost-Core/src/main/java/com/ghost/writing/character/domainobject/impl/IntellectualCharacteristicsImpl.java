@@ -1,11 +1,10 @@
 package com.ghost.writing.character.domainobject.impl;
 
 import java.util.Collection;
-import java.util.Collection;
 
-import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
+import com.ghost.writing.character.domainobject.IIntellectualCharacteristics;
 
-public class IntellectualCharacteristicsImpl implements IntellectualCharacteristics {
+public class IntellectualCharacteristicsImpl implements IIntellectualCharacteristics {
 	private Collection<String> education;
 	private String intelligenceLevel;
 	private Collection<String> mentalIllnesses;

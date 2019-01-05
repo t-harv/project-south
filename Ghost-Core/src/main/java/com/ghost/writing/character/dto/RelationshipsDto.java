@@ -1,6 +1,6 @@
 package com.ghost.writing.character.dto;
 
-import com.ghost.writing.character.domainobject.Relationships;
+import com.ghost.writing.character.domainobject.IRelationships;
 
 /**
  * 
@@ -12,7 +12,7 @@ import com.ghost.writing.character.domainobject.Relationships;
  * who do not exist yet you get a constraint error.  Unless if the character do not exist, you add them! 
  *
  */
-public class RelationshipsDto implements Relationships {
+public class RelationshipsDto implements IRelationships {
 	private String characterName;
 	private String relationship;
 	/**

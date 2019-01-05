@@ -1,6 +1,6 @@
 package com.ghost.writing.character.dto;
 
-import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
+import com.ghost.writing.character.domainobject.ISpiritualCharacteristics;
 
 /**
  * 
@@ -9,7 +9,7 @@ import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
  * Character Profile spiritual characteristics
  *
  */
-public class SpiritualCharacteristicsDto implements SpiritualCharacteristics {
+public class SpiritualCharacteristicsDto implements ISpiritualCharacteristics {
 	private boolean beliefInGod;
 	//sprititual beliefs
 	private String belief;

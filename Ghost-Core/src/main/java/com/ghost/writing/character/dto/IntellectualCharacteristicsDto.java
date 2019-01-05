@@ -2,7 +2,7 @@ package com.ghost.writing.character.dto;
 
 import java.util.Collection;
 
-import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
+import com.ghost.writing.character.domainobject.IIntellectualCharacteristics;
 
 
 /**
@@ -12,7 +12,7 @@ import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
  * Character profile mapping character's intellectual characteristics.
  *
  */
-public class IntellectualCharacteristicsDto implements IntellectualCharacteristics {
+public class IntellectualCharacteristicsDto implements IIntellectualCharacteristics {
 	private String educationalBackground;
 	private String intelligenceLevel;
 	private Collection<String> learningExperiences;

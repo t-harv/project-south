@@ -1,15 +1,10 @@
 package com.ghost.writing.character.domainobject.impl;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import com.ghost.writing.character.domainobject.CharacterArch;
+import com.ghost.writing.character.domainobject.ICharacterArch;
 
-@Entity
-@Table(name="CharacterArch")
-public class CharacterArchImpl implements CharacterArch {
+
+public class CharacterArchImpl implements ICharacterArch {
 	
-	@Id
 	private long characterArchID;
 	
 	private String characterRole;

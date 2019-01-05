@@ -2,10 +2,10 @@ package com.ghost.writing.character.domainobject.impl;
 
 import javax.persistence.Embeddable;
 
-import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
+import com.ghost.writing.character.domainobject.IEmotionalCharacteristics;
 
 @Embeddable
-public class EmotionalCharacteristicsImpl implements EmotionalCharacteristics {
+public class EmotionalCharacteristicsImpl implements IEmotionalCharacteristics {
 //	@ElementCollection
 //	@CollectionTable(name="Strenghts", joinColumns=@JoinColumn(name="character_profile_id"))
 //	@GenericGenerator(name="sequence-gen", strategy="sequence")

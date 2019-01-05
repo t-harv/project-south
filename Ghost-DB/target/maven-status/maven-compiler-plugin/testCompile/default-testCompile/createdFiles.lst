@@ -1,2 +1,4 @@
+com/ghost/test/writing/character/domainobject/impl/HiberDriverTest.class
 com/ghost/test/database/DatabaseConnectionTest.class
+com/ghost/test/writing/character/domainobject/impl/CharacterImplDOTest.class
 com/ghost/test/writing/character/domainobject/impl/CharacterArchImplDOTest.class

@@ -2,8 +2,8 @@ package com.ghost.writing.character.dto;
 
 import java.util.Collection;
 
-import com.ghost.writing.character.domainobject.CharacterArch;
-import com.ghost.writing.character.domainobject.Relationships;
+import com.ghost.writing.character.domainobject.ICharacterArch;
+import com.ghost.writing.character.domainobject.IRelationships;
 
 
 /**
@@ -13,10 +13,10 @@ import com.ghost.writing.character.domainobject.Relationships;
  *Character profile character arch.
  *
  */
-public class CharcterArchDto implements CharacterArch {
+public class CharcterArchDto implements ICharacterArch {
 	private String roleInStory;
 	private String firstAppearance;
-	private Collection<Relationships> relationships;
+	private Collection<IRelationships> relationships;
 	//how character is different at the end of the story from when the story began;
 	private String growth;
 	private Collection<String> additionalNotes;
@@ -48,13 +48,13 @@ public class CharcterArchDto implements CharacterArch {
 	/**
 	 * @return the relationships
 	 */
-	public Collection<Relationships> getRelationships() {
+	public Collection<IRelationships> getRelationships() {
 		return relationships;
 	}
 	/**
 	 * @param relationships the relationships to set
 	 */
-	public void setRelationships(Collection<Relationships> relationships) {
+	public void setRelationships(Collection<IRelationships> relationships) {
 		this.relationships = relationships;
 	}
 	/**

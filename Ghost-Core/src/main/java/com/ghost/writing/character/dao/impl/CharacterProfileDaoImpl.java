@@ -8,18 +8,18 @@ import javax.persistence.GenerationType;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.ghost.writing.character.domainobject.CharacterArch;
-import com.ghost.writing.character.domainobject.CharacterProfile;
-import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
-import com.ghost.writing.character.domainobject.IntellectualCharacteristics;
-import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
-import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
+import com.ghost.writing.character.domainobject.ICharacterArch;
+import com.ghost.writing.character.domainobject.ICharacterProfile;
+import com.ghost.writing.character.domainobject.IEmotionalCharacteristics;
+import com.ghost.writing.character.domainobject.IIntellectualCharacteristics;
+import com.ghost.writing.character.domainobject.IPhysicalCharacteristics;
+import com.ghost.writing.character.domainobject.ISpiritualCharacteristics;
 
 
 @XmlRootElement
 @Entity
 @Table(name="CHARACTER_PROFILE")
-public class CharacterProfileDaoImpl implements CharacterProfile {
+public class CharacterProfileDaoImpl implements ICharacterProfile {
 	//auto generated primary key
 	@javax.persistence.Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -42,13 +42,13 @@ public class CharacterProfileDaoImpl implements CharacterProfile {
 	private Collection<String> grandChildren; //make this a list
 	private Collection<String> significantOther;  //make this a list
 	
-	private PhysicalCharacteristics pc;
-	private IntellectualCharacteristics ic;
-	private EmotionalCharacteristics ec;
-	private SpiritualCharacteristics sc;
-	private CharacterArch ca;
+	private IPhysicalCharacteristics pc;
+	private IIntellectualCharacteristics ic;
+	private IEmotionalCharacteristics ec;
+	private ISpiritualCharacteristics sc;
+	private ICharacterArch ca;
 	
-	public CharacterProfileDaoImpl(CharacterProfile cp) {
+	public CharacterProfileDaoImpl(ICharacterProfile cp) {
 //		id = cp.getId();
 //		firstName = cp.getFirstName();
 //		lastName = cp.getLastName();
@@ -312,74 +312,73 @@ public class CharacterProfileDaoImpl implements CharacterProfile {
 	/**
 	 * @return the pc
 	 */
-	public PhysicalCharacteristics getPc() {
+	public IPhysicalCharacteristics getPc() {
 		return pc;
 	}
 
 	/**
 	 * @param pc the pc to set
 	 */
-	public void setPc(PhysicalCharacteristics pc) {
+	public void setPc(IPhysicalCharacteristics pc) {
 		this.pc = pc;
 	}
 
 	/**
 	 * @return the ic
 	 */
-	public IntellectualCharacteristics getIc() {
+	public IIntellectualCharacteristics getIc() {
 		return ic;
 	}
 
 	/**
 	 * @param ic the ic to set
 	 */
-	public void setIc(IntellectualCharacteristics ic) {
+	public void setIc(IIntellectualCharacteristics ic) {
 		this.ic = ic;
 	}
 
 	/**
 	 * @return the ec
 	 */
-	public EmotionalCharacteristics getEc() {
+	public IEmotionalCharacteristics getEc() {
 		return ec;
 	}
 
 	/**
 	 * @param ec the ec to set
 	 */
-	public void setEc(EmotionalCharacteristics ec) {
+	public void setEc(IEmotionalCharacteristics ec) {
 		this.ec = ec;
 	}
 
 	/**
 	 * @return the sc
 	 */
-	public SpiritualCharacteristics getSc() {
+	public ISpiritualCharacteristics getSc() {
 		return sc;
 	}
 
 	/**
 	 * @param sc the sc to set
 	 */
-	public void setSc(SpiritualCharacteristics sc) {
+	public void setSc(ISpiritualCharacteristics sc) {
 		this.sc = sc;
 	}
 
 	/**
 	 * @return the ca
 	 */
-	public CharacterArch getCa() {
+	public ICharacterArch getCa() {
 		return ca;
 	}
 
 	/**
 	 * @param ca the ca to set
 	 */
-	public void setCa(CharacterArch ca) {
+	public void setCa(ICharacterArch ca) {
 		this.ca = ca;
 	}
 
-	@Override
 	public void setBirthOrder(int x) {
 		// TODO Auto-generated method stub
 		
