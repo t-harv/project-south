@@ -184,18 +184,18 @@ public class CharacterProfileDataObjects {
 		Collection<String> jalaMotivations = new ArrayList<String>();
 		jalaMotivations.add("BabyL");
 		jalaMotivations.add("God");
-		((EmotionalCharacteristicsImpl)ec).setMotivations(jalaMotivations);
+//		((EmotionalCharacteristicsImpl)ec).setMotivations(jalaMotivations);
 		((EmotionalCharacteristicsImpl)ec).setPolite(true);
 		((EmotionalCharacteristicsImpl)ec).setRude(false);
 		((EmotionalCharacteristicsImpl)ec).setSadManagement("Not good");
 		Collection<String> jalaStrengths = new ArrayList<String>();
 		jalaStrengths.add("Herself");
-		((EmotionalCharacteristicsImpl)ec).setStrengths(jalaStrengths);
+//		((EmotionalCharacteristicsImpl)ec).setStrengths(jalaStrengths);
 		((EmotionalCharacteristicsImpl)ec).setWantOutOfLife("Happiness");
 		Collection<String> jalaWeaknesses = new ArrayList<String>();
 		jalaWeaknesses.add("Food!");
-		((EmotionalCharacteristicsImpl)ec).setWeaknesses(jalaWeaknesses);
-		((CharacterProfileImpl)jala).setEc(ec);
+//		((EmotionalCharacteristicsImpl)ec).setWeaknesses(jalaWeaknesses);
+//		((CharacterProfileImpl)jala).setEc(ec);
 
 
 		//character arch

@@ -7,13 +7,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.ghost.writing.character.domainobject.CharacterArch;
-import com.ghost.writing.character.domainobject.CharacterProfile;
-import com.ghost.writing.character.domainobject.EmotionalCharacteristics;
+import com.ghost.writing.character.domainobject.ICharacterArch;
 import com.ghost.writing.character.domainobject.ICharacterProfile;
+import com.ghost.writing.character.domainobject.IEmotionalCharacteristics;
 import com.ghost.writing.character.domainobject.IIntellectualCharacteristics;
-import com.ghost.writing.character.domainobject.PhysicalCharacteristics;
-import com.ghost.writing.character.domainobject.SpiritualCharacteristics;
+import com.ghost.writing.character.domainobject.IPhysicalCharacteristics;
+import com.ghost.writing.character.domainobject.ISpiritualCharacteristics;
 import com.ghost.writing.components.EmbeddedAddressTest;
 import com.ghost.writing.components.Nationality.Race;
 
@@ -69,7 +68,7 @@ public class CharacterProfileImplTest {
 		
 		
 //		Spiritual Characteristics
-		SpiritualCharacteristics sc = new SpiritualCharacteristicsImpl();
+		ISpiritualCharacteristics sc = new SpiritualCharacteristicsImpl();
 		((SpiritualCharacteristicsImpl)sc).setBelieve(true);
 		((SpiritualCharacteristicsImpl)sc).setRole("Everything");
 		((SpiritualCharacteristicsImpl)sc).setSpiritual(true);
@@ -81,7 +80,7 @@ public class CharacterProfileImplTest {
 		
 		
 //		Physical Characteristics
-		PhysicalCharacteristics pc = new PhysicalCharacteristicsImpl();
+		IPhysicalCharacteristics pc = new PhysicalCharacteristicsImpl();
 		((PhysicalCharacteristicsImpl)pc).setBestQuality("Smart");
 		((PhysicalCharacteristicsImpl)pc).setContactLenses(false);
 		List<String> jalaDisabilities = new ArrayList<String>();
@@ -144,7 +143,7 @@ public class CharacterProfileImplTest {
 //		((CharacterProfileImpl)jala).setIc(ic);
 		
 		//Emotional Characteristics
-		EmotionalCharacteristics ec = new EmotionalCharacteristicsImpl();
+		IEmotionalCharacteristics ec = new EmotionalCharacteristicsImpl();
 		((EmotionalCharacteristicsImpl)ec).setAngerManagement("Needs it");
 		((EmotionalCharacteristicsImpl)ec).setChangeManagement("50/50 resistant to change");
 		((EmotionalCharacteristicsImpl)ec).setConflictManagement("None!  Very angry");
@@ -155,26 +154,26 @@ public class CharacterProfileImplTest {
 		List<String> jalaMotivations = new ArrayList<String>();
 		jalaMotivations.add("BabyL");
 		jalaMotivations.add("God");
-		((EmotionalCharacteristicsImpl)ec).setMotivations(jalaMotivations);
+//		((EmotionalCharacteristicsImpl)ec).setMotivations(jalaMotivations);
 		((EmotionalCharacteristicsImpl)ec).setPolite(true);
 		((EmotionalCharacteristicsImpl)ec).setRude(false);
 		((EmotionalCharacteristicsImpl)ec).setSadManagement("Not good");
 		List<String> jalaStrengths = new ArrayList<String>();
 		jalaStrengths.add("Herself");
-		((EmotionalCharacteristicsImpl)ec).setStrengths(jalaStrengths);
+//		((EmotionalCharacteristicsImpl)ec).setStrengths(jalaStrengths);
 		((EmotionalCharacteristicsImpl)ec).setWantOutOfLife("Happiness");
 		List<String> jalaWeaknesses = new ArrayList<String>();
 		jalaWeaknesses.add("Food!");
-		((EmotionalCharacteristicsImpl)ec).setWeaknesses(jalaWeaknesses);
+//		((EmotionalCharacteristicsImpl)ec).setWeaknesses(jalaWeaknesses);
 //		((CharacterProfileImpl)jala).setEc(ec);
 		
 		
 		//character arch
-		CharacterArch ca = new CharacterArchImpl();
+		ICharacterArch ca = new CharacterArchImpl();
 		((CharacterArchImpl)ca).setCharacterRole("Unknown");
 		((CharacterArchImpl)ca).setFinale("Unknown");
 		((CharacterArchImpl)ca).setFirstAppearance("2013, Washington DC");
-		List<CharacterProfile> jalaRelationships = new ArrayList<CharacterProfile>();
+		List<ICharacterProfile> jalaRelationships = new ArrayList<ICharacterProfile>();
 //		((CharacterArchImpl)ca).setRelationships(jalaRelationships);
 //		((CharacterProfileImpl)jala).setCa(ca);
 	}
@@ -188,28 +187,28 @@ public class CharacterProfileImplTest {
 	/**
 	 * @return the jala
 	 */
-	public CharacterProfile getJala() {
+	public ICharacterProfile getJala() {
 		return jala;
 	}
 
 	/**
 	 * @param jala the jala to set
 	 */
-	public void setJala(CharacterProfile jala) {
+	public void setJala(ICharacterProfile jala) {
 		jala = jala;
 	}
 
 	/**
 	 * @return the babyL
 	 */
-	public CharacterProfile getBabyL() {
+	public ICharacterProfile getBabyL() {
 		return babyL;
 	}
 
 	/**
 	 * @param babyL the babyL to set
 	 */
-	public void setBabyL(CharacterProfile babyL) {
+	public void setBabyL(ICharacterProfile babyL) {
 		babyL = babyL;
 	}
 	
