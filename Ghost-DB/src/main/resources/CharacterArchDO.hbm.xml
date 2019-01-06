@@ -2,7 +2,9 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="com.ghost.writing.character.domainobject.impl.CharacterArchImpl" table="CHARACTER_ARCH">
+	<class
+		name="com.ghost.writing.character.domainobject.impl.CharacterArchImpl"
+		table="CHARACTER_ARCH">
 		<id name="characterArchID" type="long">
 			<column name="CHARACTERARCHID" precision="5" scale="0" />
 			<generator class="increment" />
@@ -16,5 +18,10 @@
 		<property name="finale" type="string">
 			<column name="FINALE" length="4000"></column>
 		</property>
+		<many-to-one name="character"
+			class="com.ghost.writing.character.domainobject.impl.CharacterImpl"
+			fetch="select">
+			<column name="CHARACTERID" not-null="true" />
+		</many-to-one>
 	</class>
 </hibernate-mapping>

@@ -1,5 +1,6 @@
 package com.ghost.writing.character.domainobject.impl;
 
+import com.ghost.writing.character.domainobject.ICharacter;
 import com.ghost.writing.character.domainobject.ICharacterArch;
 
 
@@ -9,6 +10,8 @@ public class CharacterArchImpl implements ICharacterArch {
 	
 	private String characterRole;
 	private String firstAppearance;
+	private ICharacter character;
+	
 //    @OneToOne(fetch = FetchType.LAZY)
 //    @MapsId
 //	private CharacterProfile profile;
@@ -87,6 +90,14 @@ public class CharacterArchImpl implements ICharacterArch {
 
 	public void setCharacterArchID(long characterArchID) {
 		this.characterArchID = characterArchID;
+	}
+
+	public ICharacter getCharacter() {
+		return character;
+	}
+
+	public void setCharacter(ICharacter character) {
+		this.character = character;
 	}
 
 //	/**

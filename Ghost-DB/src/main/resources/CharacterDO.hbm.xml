@@ -2,7 +2,9 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="com.ghost.writing.character.domainobject.impl.CharacterImpl" table="CHARACTER_YOLO">
+	<class
+		name="com.ghost.writing.character.domainobject.impl.CharacterImpl"
+		table="CHARACTER_YOLO">
 		<id name="characterId" type="long">
 			<column name="CHARACTERID" precision="5" scale="0" />
 			<generator class="increment" />
@@ -13,5 +15,12 @@
 		<property name="lastName" type="string">
 			<column name="LASTNAME" length="4000"></column>
 		</property>
+		<set name="charArchs" table="CHARACTER_ARCH" inverse="true"
+			lazy="true" fetch="select">
+			<key>
+				<column name="CHARACTERID" not-null="true" />
+			</key>
+			<one-to-many class="com.ghost.writing.character.domainobject.impl.CharacterArchImpl"/>
+		</set>
 	</class>
 </hibernate-mapping>

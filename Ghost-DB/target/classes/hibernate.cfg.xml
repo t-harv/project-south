@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<!-- The connection info will be removed from here and retrived from the server -->
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.driver_class">org.apache.commons.dbcp.BasicDataSource</property>
@@ -8,7 +10,7 @@
 		<property name="hibernate.connection.username">toyan</property>
 		<property name="hibernate.connection.password">turpleP420</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
-		<property name="hibernate.hbm2ddl.auto">create</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
 		<property name="hibernate.default_schema">TOYAN</property>
 		<property name="show_sql">true</property>
 		<mapping resource="DraftDO.hbm.xml"></mapping>
