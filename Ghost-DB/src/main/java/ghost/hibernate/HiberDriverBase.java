@@ -8,7 +8,7 @@ import com.ghost.writing.character.domainobject.ICharacterProfile;
 
 import ghost.domain.hibernate.HibernateUtil;
 
-public class HiberDriver {
+public class HiberDriverBase {
 	private String mapping;
 	
 	public String getMapping() {
@@ -19,10 +19,10 @@ public class HiberDriver {
 		this.mapping = mapping;
 	}
 
-	public HiberDriver() {
+	public HiberDriverBase() {
 	}
 	
-	public HiberDriver(String mapping) {
+	public HiberDriverBase(String mapping) {
 		this.mapping = mapping;
 	}
 	
@@ -36,12 +36,14 @@ public class HiberDriver {
 	 * 
 	 * @param object
 	 */
-	public void add(ICharacterProfile object) {
+	public void add(ICharacterProfile objectX) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 
 		session.beginTransaction();
 		
-		System.out.println(object.getClass().toString());
+		System.out.println(objectX.getClass().toString());
+//		object.getClass().toString())object
+//		session.save((objectX.getClass().toString())objectX);
 		
 		
 		session.getTransaction().commit();

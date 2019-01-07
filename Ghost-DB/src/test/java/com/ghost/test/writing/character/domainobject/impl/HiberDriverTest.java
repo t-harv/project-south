@@ -6,11 +6,14 @@ import org.hibernate.Session;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.ghost.writing.character.domainobject.ICharacter;
 import com.ghost.writing.character.domainobject.ICharacterArch;
 import com.ghost.writing.character.domainobject.ICharacterProfile;
 import com.ghost.writing.character.domainobject.impl.CharacterArchImpl;
+import com.ghost.writing.character.domainobject.impl.CharacterImpl;
 
 import ghost.domain.hibernate.HibernateUtil;
+import ghost.hibernate.HiberDriver;
 
 public class HiberDriverTest {
 	private String mapping;
@@ -35,12 +38,16 @@ public class HiberDriverTest {
 	}
 	@Test
 	public void addTest() {
-		Session session = HibernateUtil.getSessionFactory().openSession();
-		session.beginTransaction();
-		ICharacterArch CharacterArchObject = new CharacterArchImpl("Side Chick2","Mexico", "Fame");
-		session.save(CharacterArchObject); 
-		session.getTransaction().commit();
+		ICharacter characterObject = new CharacterImpl("Chikita","Raslo");
+
+		//add to db
+		
+		ICharacterArch characterArchObject = new CharacterArchImpl("Side Chick","Mexico", "Fame");
+		ICharacterArch characterArchObject2 = new CharacterArchImpl("Hero","USA", "Humanitarian");
+		HiberDriver x = new HiberDriver();
+		x.add(characterArchObject);
 	}
+		
 	
 	public void updateTest(ICharacterProfile object) {
 		

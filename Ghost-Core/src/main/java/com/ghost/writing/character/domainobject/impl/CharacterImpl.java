@@ -1,5 +1,6 @@
 package com.ghost.writing.character.domainobject.impl;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import com.ghost.writing.character.domainobject.ICharacter;
@@ -14,10 +15,12 @@ public class CharacterImpl implements ICharacter {
 	private Set<ICharacterArch> charArchs;
 	
 	public CharacterImpl() {
+		charArchs = new HashSet<ICharacterArch>();
 		
 	}
 	
 	public CharacterImpl(String firstName, String lastName) {
+		this();
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
@@ -41,14 +44,6 @@ public class CharacterImpl implements ICharacter {
 
 	public void setCharacterId(long characterId) {
 		this.characterId = characterId;
-	}
-
-	public Set<ICharacterArch> getCharArch() {
-		return charArchs;
-	}
-
-	public void setCharArch(Set<ICharacterArch> charArch) {
-		this.charArchs = charArch;
 	}
 
 	public Set<ICharacterArch> getCharArchs() {

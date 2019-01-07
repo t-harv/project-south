@@ -15,8 +15,10 @@
 		<property name="lastName" type="string">
 			<column name="LASTNAME" length="4000"></column>
 		</property>
+		<!-- I had issues with the cascade attribute, i don't really understand it! -->
 		<set name="charArchs" table="CHARACTER_ARCH" inverse="true"
-			lazy="true" fetch="select">
+			lazy="true" fetch="select" cascade="persist,lock,replicate,save-update,delete,delete-orphan,refresh" 
+			batch-size="10">
 			<key>
 				<column name="CHARACTERID" not-null="true" />
 			</key>
