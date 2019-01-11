@@ -49,7 +49,9 @@ public class CharacterImplDOXMLTest {
 		
 		session.save(characterObject);
 		
-		ICharacter retrievedObject = (ICharacter) session.get(CharacterImpl.class, 1L);
+		long recordId = ((CharacterImpl)characterObject).getRecordId();
+		
+		ICharacter retrievedObject = (ICharacter) session.get(CharacterImpl.class, recordId);
 		
 		System.out.println(((CharacterImpl)retrievedObject).getFirstName() + " " + ((CharacterImpl)retrievedObject).getLastName());
 		
@@ -62,6 +64,82 @@ public class CharacterImplDOXMLTest {
 		session.getTransaction().commit();
 		session.close();
 	}
+	
+	@Test
+	public void addCharacterTest3() {
+		try {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+
+		session.beginTransaction();
+		ICharacter characterObject = new CharacterImpl(55l, "Chikita","Raslo");
+		ICharacterArch characterArchObject = new CharacterArchImpl("Side Chick","Mexico", "Fame");
+		ICharacterArch characterArchObject2 = new CharacterArchImpl("Hero","USA", "Humanitarian");
+		
+		((CharacterArchImpl)characterArchObject).setCharacter(characterObject);
+		((CharacterArchImpl)characterArchObject2).setCharacter(characterObject);
+		
+		((CharacterImpl)characterObject).getCharArchs().add(characterArchObject);
+		((CharacterImpl)characterObject).getCharArchs().add(characterArchObject2);
+		
+		session.save(characterObject);
+		
+		long recordId = ((CharacterImpl)characterObject).getRecordId();
+		
+		ICharacter retrievedObject = (ICharacter) session.get(CharacterImpl.class, recordId);
+		
+		System.out.println(((CharacterImpl)retrievedObject).getFirstName() + " " + ((CharacterImpl)retrievedObject).getLastName());
+//		
+		session.getTransaction().commit();
+		session.close();		
+		
+		session = HibernateUtil.getSessionFactory().openSession();
+		session.beginTransaction();
+		session.delete(retrievedObject);
+		session.getTransaction().commit();
+		session.close();
+		}catch(Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void addCharacterTest4() {
+		try {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+
+		session.beginTransaction();
+		ICharacter characterObject = new CharacterImpl(55l, "Chikita","Raslo");
+		ICharacterArch characterArchObject = new CharacterArchImpl("Side Chick","Mexico", "Fame");
+		ICharacterArch characterArchObject2 = new CharacterArchImpl("Hero","USA", "Humanitarian");
+		
+		((CharacterArchImpl)characterArchObject).setCharacter(characterObject);
+		((CharacterArchImpl)characterArchObject2).setCharacter(characterObject);
+		
+		((CharacterImpl)characterObject).getCharArchs().add(characterArchObject);
+		((CharacterImpl)characterObject).getCharArchs().add(characterArchObject2);
+		
+		System.out.println("Record ID before save: " + ((CharacterImpl)characterObject).getRecordId());
+		session.save(characterObject);
+		long recordId = ((CharacterImpl)characterObject).getRecordId();
+		System.out.println("Record ID after save: " + ((CharacterImpl)characterObject).getRecordId());
+		
+		ICharacter retrievedObject = (ICharacter) session.get(CharacterImpl.class, recordId);
+		
+		System.out.println(((CharacterImpl)retrievedObject).getFirstName() + " " + ((CharacterImpl)retrievedObject).getLastName());
+//		
+		session.getTransaction().commit();
+		session.close();		
+		
+		session = HibernateUtil.getSessionFactory().openSession();
+		session.beginTransaction();
+		session.delete(retrievedObject);
+		session.getTransaction().commit();
+		session.close();
+		}catch(Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+	
 	
 	@Test
 	public void retriveCharacterTest() {
@@ -78,6 +156,7 @@ public class CharacterImplDOXMLTest {
 		((CharacterImpl)characterObject).getCharArchs().add(characterArchObject2);
 		
 		session.save(characterObject);
+		long recordId = ((CharacterImpl)characterObject).getRecordId();
 		session.getTransaction().commit();
 		session.close();
 		
@@ -88,7 +167,7 @@ public class CharacterImplDOXMLTest {
 		
 		session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
-		ICharacter retrievedObject = (ICharacter)session.get(CharacterImpl.class, 1L);
+		ICharacter retrievedObject = (ICharacter)session.get(CharacterImpl.class, recordId);
 		Set<ICharacterArch> sets = ((CharacterImpl)retrievedObject).getCharArchs();
 		System.out.println("Character ID: " + ((CharacterImpl)retrievedObject).getCharacterId());
 		System.out.println("Character Name: " + ((CharacterImpl)retrievedObject).getFirstName() + " " + ((CharacterImpl)retrievedObject).getLastName());
@@ -124,6 +203,7 @@ public class CharacterImplDOXMLTest {
 		((CharacterImpl)characterObject).getCharArchs().add(characterArchObject2);
 		
 		session.save(characterObject);
+		long recordId = ((CharacterImpl)characterObject).getRecordId();
 		session.getTransaction().commit();
 		session.close();
 		
@@ -134,7 +214,7 @@ public class CharacterImplDOXMLTest {
 		
 		session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
-		ICharacter retrievedObject = (ICharacter)session.get(CharacterImpl.class, 1L);
+		ICharacter retrievedObject = (ICharacter)session.get(CharacterImpl.class, recordId);
 		Set<ICharacterArch> sets = ((CharacterImpl)retrievedObject).getCharArchs();
 		System.out.println("Character ID: " + ((CharacterImpl)retrievedObject).getCharacterId());
 		System.out.println("Character Name: " + ((CharacterImpl)retrievedObject).getFirstName() + " " + ((CharacterImpl)retrievedObject).getLastName());
@@ -165,12 +245,14 @@ public class CharacterImplDOXMLTest {
 		
 		
 		session.save(retrievedObject);
+		
+		recordId = ((CharacterImpl)retrievedObject).getRecordId();
 		session.getTransaction().commit();
 		session.close();
 		
 		session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
-		ICharacter retrievedObject2 = (ICharacter)session.get(CharacterImpl.class, 1L);
+		ICharacter retrievedObject2 = (ICharacter)session.get(CharacterImpl.class, recordId);
 		Set<ICharacterArch> sets2 = ((CharacterImpl)retrievedObject2).getCharArchs();
 		System.out.println("Character ID: " + ((CharacterImpl)retrievedObject2).getCharacterId());
 		System.out.println("Character Name: " + ((CharacterImpl)retrievedObject2).getFirstName() + " " + ((CharacterImpl)retrievedObject2).getLastName());

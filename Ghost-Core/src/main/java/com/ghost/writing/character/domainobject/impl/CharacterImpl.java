@@ -9,9 +9,9 @@ import com.ghost.writing.character.domainobject.ICharacterArch;
 public class CharacterImpl implements ICharacter {
 	
 	private long characterId;
+	private long recordId;
 	private String firstName;
 	private String lastName;
-	//using mkyong example, changed from List to a Set.  Find out why we chosed set over List...
 	private Set<ICharacterArch> charArchs;
 	
 	public CharacterImpl() {
@@ -23,6 +23,13 @@ public class CharacterImpl implements ICharacter {
 		this();
 		this.firstName = firstName;
 		this.lastName = lastName;
+	}
+	
+	public CharacterImpl(long characterId, String firstName, String lastName) {
+		this();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.characterId = characterId;
 	}
 	
 	public String getFirstName() {
@@ -52,5 +59,13 @@ public class CharacterImpl implements ICharacter {
 
 	public void setCharArchs(Set<ICharacterArch> charArchs) {
 		this.charArchs = charArchs;
+	}
+
+	public long getRecordId() {
+		return recordId;
+	}
+
+	public void setRecordId(long recordId) {
+		this.recordId = recordId;
 	}
 }

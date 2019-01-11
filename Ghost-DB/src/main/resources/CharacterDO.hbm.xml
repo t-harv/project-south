@@ -5,24 +5,34 @@
 	<class
 		name="com.ghost.writing.character.domainobject.impl.CharacterImpl"
 		table="CHARACTER_YOLO">
-		<id name="characterId" type="long">
-			<column name="CHARACTERID" precision="5" scale="0" />
+		<id name="recordId" type="long">
+			<column name="RECORDID" precision="5" scale="0" />
 			<generator class="increment" />
 		</id>
+
+		<properties name="CHARACTERUNIQUEKEY" unique="true">
+			<property name="characterId" type="long" />
+		</properties>
+
+		<!-- <property name="characterId" type="long"> <column name="CHARACTERID" 
+			precision="5" scale="0" /> </property> -->
 		<property name="firstName" type="string">
 			<column name="FIRSTNAME" length="4000"></column>
 		</property>
 		<property name="lastName" type="string">
 			<column name="LASTNAME" length="4000"></column>
 		</property>
-		<!-- I had issues with the cascade attribute, i don't really understand it! -->
+		<!-- I had issues with the cascade attribute, i don't really understand 
+			it! -->
 		<set name="charArchs" table="CHARACTER_ARCH" inverse="true"
-			lazy="true" fetch="select" cascade="persist,lock,replicate,save-update,delete,delete-orphan,refresh" 
+			lazy="true" fetch="select"
+			cascade="persist,lock,replicate,save-update,delete,delete-orphan,refresh"
 			batch-size="10">
 			<key>
-				<column name="CHARACTERID" not-null="true" />
+				<column name="characterId" not-null="true" />
 			</key>
-			<one-to-many class="com.ghost.writing.character.domainobject.impl.CharacterArchImpl"/>
+			<one-to-many
+				class="com.ghost.writing.character.domainobject.impl.CharacterArchImpl" />
 		</set>
 	</class>
 </hibernate-mapping>
