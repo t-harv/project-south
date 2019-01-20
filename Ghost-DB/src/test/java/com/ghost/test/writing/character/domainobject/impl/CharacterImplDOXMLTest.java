@@ -31,7 +31,7 @@ public class CharacterImplDOXMLTest {
 	
 
 	
-	//cascated update!
+	//cascade update!
 	@Test
 	public void addCharacterTest2() {
 		Session session = HibernateUtil.getSessionFactory().openSession();
