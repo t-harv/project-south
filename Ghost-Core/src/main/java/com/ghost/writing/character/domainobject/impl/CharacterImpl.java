@@ -8,6 +8,7 @@ import com.ghost.writing.character.domainobject.ICharacterArch;
 
 public class CharacterImpl implements ICharacter {
 	
+	//get rid of one of these ID's
 	private long characterId;
 	private long recordId;
 	private String firstName;

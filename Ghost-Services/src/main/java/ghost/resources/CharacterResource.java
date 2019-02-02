@@ -12,7 +12,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.ghost.writing.character.Character;
+import com.ghost.writing.character.domainobject.ICharacter;
+
 import ghost.service.CharacterService;
 
 @Path("/characters")
@@ -23,33 +24,33 @@ public class CharacterResource {
 	CharacterService characterService = new CharacterService();
 
 	@GET
-	public List<Character> getCharacters() {
+	public List<ICharacter> getCharacters() {
 		return characterService.getAllCharacters();
 	}
 
 	@GET
 	@Path("/{characterId}")
-	public Character getCharacter(@PathParam("characterId") long id) {	
+	public ICharacter getCharacter(@PathParam("characterId") long id) {	
 		return characterService.getCharacter(id);
 	}
 
 
 	@POST
-	public Character addCharacter(Character character){
+	public ICharacter addCharacter(ICharacter character){
 		return characterService.addCharacter(character);
 	}
 
 
 	@PUT
 	@Path("/{characterId}")
-	public Character updateCharacter(@PathParam("characterId") long id, Character character){
-		character.setId(id);
+	public ICharacter updateCharacter(@PathParam("characterId") long id, ICharacter character){
+//		character.setId(id);
 		return characterService.updateCharacter(character);
 	}
 
 	@DELETE
 	@Path("/{characterId}")
-	public Character removeCharacter(@PathParam("characterId") long id){
+	public ICharacter removeCharacter(@PathParam("characterId") long id){
 		return characterService.removeCharacter(id);
 	}
 
