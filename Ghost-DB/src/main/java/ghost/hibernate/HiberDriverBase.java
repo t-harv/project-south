@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.hibernate.Session;
 
-import com.ghost.writing.character.domainobject.ICharacterProfile;
+import com.ghost.domainobject.ICharacterProfile;
 
 import ghost.domain.hibernate.HibernateUtil;
 

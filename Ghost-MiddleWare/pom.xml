@@ -6,4 +6,12 @@
     <version>10-SNAPSHOT</version>
   </parent>
   <artifactId>Ghost-MiddleWare</artifactId>
+  
+  <dependencies>
+  		<dependency>
+			<groupId>com.ghost</groupId>
+			<artifactId>Ghost-Core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+  </dependencies>
 </project>

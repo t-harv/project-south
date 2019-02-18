@@ -1,6 +1,6 @@
 package com.ghost.model;
 
-import com.ghost.writing.character.domainobject.ICharacter;
+import com.ghost.domainobject.ICharacter;
 
 /**
  * Purpose of this class is to build domain objects that the hibernate controller can easily persist.  So what that means is this class will be

@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 	<class
-		name="com.ghost.writing.character.domainobject.impl.CharacterArchImpl"
+		name="com.ghost.domainobject.impl.CharacterArchImpl"
 		table="CHARACTER_ARCH">
 		<id name="characterArchID" type="long">
 			<column name="CHARACTERARCHID" precision="5" scale="0" />
@@ -19,7 +19,7 @@
 			<column name="FINALE" length="4000"></column>
 		</property>
 		<many-to-one name="character"
-			class="com.ghost.writing.character.domainobject.impl.CharacterImpl"
+			class="com.ghost.domainobject.impl.CharacterImpl"
 			fetch="select">
 			<column name="CHARACTERID" not-null="true" />
 		</many-to-one>

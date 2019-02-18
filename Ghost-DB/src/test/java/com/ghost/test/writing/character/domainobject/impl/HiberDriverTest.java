@@ -6,11 +6,11 @@ import org.hibernate.Session;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.ghost.writing.character.domainobject.ICharacter;
-import com.ghost.writing.character.domainobject.ICharacterArch;
-import com.ghost.writing.character.domainobject.ICharacterProfile;
-import com.ghost.writing.character.domainobject.impl.CharacterArchImpl;
-import com.ghost.writing.character.domainobject.impl.CharacterImpl;
+import com.ghost.domainobject.ICharacter;
+import com.ghost.domainobject.ICharacterArch;
+import com.ghost.domainobject.ICharacterProfile;
+import com.ghost.domainobject.impl.CharacterArchImpl;
+import com.ghost.domainobject.impl.CharacterImpl;
 
 import ghost.domain.hibernate.HibernateUtil;
 import ghost.hibernate.HiberDriver;

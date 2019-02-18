@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 	<class
-		name="com.ghost.writing.character.domainobject.impl.CharacterImpl"
+		name="com.ghost.domainobject.impl.CharacterImpl"
 		table="CHARACTER_YOLO">
 		<id name="recordId" type="long">
 			<column name="RECORDID" precision="5" scale="0" />
@@ -32,7 +32,7 @@
 				<column name="characterId" not-null="true" />
 			</key>
 			<one-to-many
-				class="com.ghost.writing.character.domainobject.impl.CharacterArchImpl" />
+				class="com.ghost.domainobject.impl.CharacterArchImpl" />
 		</set>
 	</class>
 </hibernate-mapping>

@@ -1,5 +1,9 @@
 package ghost.middleware;
 
+import java.util.List;
+
+import com.ghost.domainobject.ICharacter;
+
 /**
  * 
  * @author root
@@ -16,6 +20,37 @@ package ghost.middleware;
  *we add more functionality, from simply displaying data to calling the data layer and creating/persisting, updating, retrieving and deleting the data.
  */
 public class GreatDivider {
+	
+	
+	
+	public List<ICharacter> getCharacters() {
+		return null;
+//		return characterService.getAllCharacters();
+	}
+
+//	public ICharacter getCharacter(@PathParam("characterId") long id) {
+		public ICharacter getCharacter(long id) {
+			return null;
+//		return characterService.getCharacter(id);
+	}
+
+
+	public ICharacter addCharacter(ICharacter character){
+		return character;
+//		return characterService.addCharacter(character);
+	}
+
+
+	public ICharacter updateCharacter(long id, ICharacter character){
+		return character;
+//		character.setId(id);
+//		return characterService.updateCharacter(character);
+	}
+
+	public ICharacter removeCharacter(long id){
+		return null;
+//		return characterService.removeCharacter(id);
+	}
 	
 
 }

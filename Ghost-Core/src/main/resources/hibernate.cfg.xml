@@ -14,9 +14,9 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle8iDialect</property>
         <property name="hibernate.hbm2ddl.auto">create</property>
-        <mapping class="com.ghost.writing.character.domainobject.impl.CharacterProfileImpl" />
+        <mapping class="com.ghost.domainobject.impl.CharacterProfileImpl" />
         <!-- <mapping class="com.ghost.writing.components.Address" />  -->
         
-        <!--  <mapping class="com.ghost.writing.character.domainobject.impl.CharacterArchImpl" />  -->
+        <!--  <mapping class="com.ghost.domainobject.impl.CharacterArchImpl" />  -->
 </session-factory>
 </hibernate-configuration>

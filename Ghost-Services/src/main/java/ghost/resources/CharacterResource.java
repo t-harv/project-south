@@ -12,7 +12,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.ghost.writing.character.domainobject.ICharacter;
+import com.ghost.domainobject.ICharacter;
 
 import ghost.service.CharacterService;
 

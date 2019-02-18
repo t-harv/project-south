@@ -33,6 +33,12 @@
 			<artifactId>Ghost-Core</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.ghost</groupId>
+			<artifactId>Ghost-MiddleWare</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>com.ghost</groupId>
 			<artifactId>Ghost-DB</artifactId>
@@ -52,6 +58,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>ghost</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

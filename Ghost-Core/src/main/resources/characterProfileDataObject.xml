@@ -10,7 +10,7 @@
            http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
 	<bean id="characterProfileDataObject"
-		class="com.ghost.writing.character.domainobject.impl.CharacterProfileDataObjects">
+		class="com.ghost.domainobject.impl.CharacterProfileDataObjects">
 		<property name="jala" ref="characterProfileObj"/>
 	</bean>
 

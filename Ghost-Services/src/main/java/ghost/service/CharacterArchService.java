@@ -2,8 +2,8 @@ package ghost.service;
 
 import java.util.List;
 
-import com.ghost.writing.character.domainobject.ICharacterArch;
-import com.ghost.writing.character.domainobject.ICharacterProfile;
+import com.ghost.domainobject.ICharacterArch;
+import com.ghost.domainobject.ICharacterProfile;
 
 import ghost.hibernate.HiberDriver;
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.ghost.domainobject.security.impl.Users"
+		table="users">
+		<id name="characterArchID" type="long">
+			<column name="CHARACTERARCHID" precision="5" scale="0" />
+			<generator class="increment" />
+		</id>
+		<property name="characterRole" type="string">
+			<column name="ROLE" length="4000"></column>
+		</property>
+		<property name="firstAppearance" type="string">
+			<column name="FIRSTAPPEARANCE" length="4000"></column>
+		</property>
+	</class>
+
+</hibernate-mapping>
